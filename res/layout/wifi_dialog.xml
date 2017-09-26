@@ -1,0 +1,888 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/area_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/asus_ationbar_height"
+        android:orientation="horizontal"
+        android:background="@color/asus_action_bottom_bar_color">
+
+        <ImageView
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/asus_actionbar_margin"
+            android:layout_centerVertical="true"
+            android:src="@drawable/asusres_ic_ab_back_holo_light" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/button_back"
+            android:layout_marginLeft="@dimen/asus_actionbar_content_margin"
+            android:text="@string/add_wifi_network"
+            android:textColor="@color/asus_content_main_color"
+            android:textSize="@dimen/asus_actionbar_main_text_size" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/area_title">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout android:id="@+id/info"
+                    style="@style/wifi_section" />
+
+            <LinearLayout android:id="@+id/type"
+                    style="@style/wifi_section"
+                    android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/asus_divider_area_height"
+                    android:background="@color/asus_divider_area_color" />
+
+                <RelativeLayout
+                          style="@style/edit_item" >
+
+                    <EditText
+                        android:id="@+id/ssid"
+                        style="@style/wifi_item_content"
+                        android:hint="@string/wifi_ssid_hint"
+                        android:maxLength="32"
+                        android:singleLine="true"
+                        android:inputType="textNoSuggestions"
+                        android:textCursorDrawable="@null"
+                        android:background="@null"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/asus_content_margin_left_right"
+                        android:textSize="@dimen/asus_actionbar_main_text_size"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/asus_divider_line"
+                        android:layout_marginLeft="@dimen/asus_content_margin_left_right"
+                        android:background="@color/asus_divider_area_color"
+                        android:layout_alignParentBottom="true"/>
+                 </RelativeLayout>
+
+                 <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:orientation="vertical">
+                     <View
+                         android:layout_width="match_parent"
+                         android:layout_height="@dimen/asus_divider_area_height"
+                         android:background="@color/asus_divider_area_color" />
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="@dimen/asus_content_head_height"
+                         android:layout_marginLeft="@dimen/asus_content_margin_left_right"
+                         android:gravity="center_vertical"
+                         android:text="@string/wifi_security_info" />
+
+                     <View
+                         android:layout_width="match_parent"
+                         android:layout_height="@dimen/asus_divider_line"
+                         android:layout_marginLeft="@dimen/asus_content_margin_left_right"
+                         android:background="@color/asus_divider_area_color" />
+
+                     <RelativeLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="@dimen/asus_content_height2"
+                         android:id="@+id/security">
+                         <LinearLayout
+                             android:layout_width="wrap_content"
+                             android:layout_height="@dimen/asus_content_height2"
+                             android:orientation="vertical"
+                             android:layout_marginLeft="@dimen/asus_content_margin_left_right">
+
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:textColor="@color/asus_content_main_color"
+                                 android:textSize="@dimen/asus_content_main_size"
+                                 android:text="@string/wifi_security_info"
+                                 android:layout_marginTop="@dimen/asus_content_margin_top"/>
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:textColor="@color/asus_content_summary_color"
+                                 android:textSize="@dimen/asus_content_summary_size"
+                                 android:text="@string/wifi_security_none"
+                                 android:id="@+id/summary"/>
+                         </LinearLayout>
+
+                         <ImageView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:src="@drawable/asusres_right_arrow"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true"
+                             android:layout_marginRight="@dimen/asus_content_margin_left_right"
+                             android:id="@+id/icon"/>
+
+                         <View
+                             android:layout_width="match_parent"
+                             android:layout_height="@dimen/asus_divider_line"
+                             android:layout_marginLeft="@dimen/asus_content_margin_left_right"
+                             android:background="@color/asus_divider_area_color"
+                             android:layout_alignParentBottom="true"
+                             android:id="@+id/divider"/>
+
+                     </RelativeLayout>
+
+                     <!--<Spinner android:id="@+id/security"
+                             style="@style/wifi_item_content"
+                             android:prompt="@string/wifi_security"
+                             android:entries="@array/wifi_security"
+                         android:visibility="gone"/>-->
+                 </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/security_fields"
+                    style="@style/wifi_section"
+                    android:visibility="gone">
+
+                <LinearLayout android:id="@+id/eap"
+                        style="@style/wifi_section"
+                        android:visibility="gone">
+
+                    <RelativeLayout
+                        android:id="@+id/l_method"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/asus_content_height2">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/asus_content_height2"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="@dimen/asus_content_margin_left_right">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/asus_content_main_color"
+                                android:textSize="@dimen/asus_content_main_size"
+                                android:text="@string/wifi_eap_method"
+                                android:layout_marginTop="@dimen/asus_content_margin_top"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/asus_content_summary_color"
+                                android:textSize="@dimen/asus_content_summary_size"
+                                android:text="@string/sim"
+                                android:id="@+id/eap_summary"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/asusres_right_arrow"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/asus_content_margin_left_right" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/asus_divider_line"
+                            android:layout_marginLeft="@dimen/asus_content_margin_left_right"
+                            android:background="@color/asus_divider_area_color"
+                            android:layout_alignParentBottom="true" />
+                        <!--<TextView
+                                style="@style/wifi_item_label"
+                                android:text="@string/wifi_eap_method" />-->
+
+                        <Spinner android:id="@+id/method"
+                                style="@style/wifi_item_content"
+                                android:prompt="@string/wifi_eap_method"
+                                android:entries="@array/wifi_eap_method"
+                            android:visibility="gone"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/l_phase2"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/asus_content_height2" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/asus_content_height2"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="@dimen/asus_content_margin_left_right">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/asus_content_main_color"
+                                android:textSize="@dimen/asus_content_main_size"
+                                android:text="@string/please_select_phase2"
+                                android:layout_marginTop="@dimen/asus_content_margin_top"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/asus_content_summary_color"
+                                android:textSize="@dimen/asus_content_summary_size"
+                                android:text="@string/wifi_security_none"
+                                android:id="@+id/phase2_summary"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/asusres_right_arrow"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/asus_content_margin_left_right" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/asus_divider_line"
+                            android:layout_marginLeft="@dimen/asus_content_margin_left_right"
+                            android:background="@color/asus_divider_area_color"
+                            android:layout_alignParentBottom="true" />
+
+                        <Spinner android:id="@+id/phase2"
+                                style="@style/wifi_item_content"
+                                android:prompt="@string/please_select_phase2"
+                                android:entries="@array/wifi_phase2_entries"
+                            android:visibility="gone"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/l_ca_cert"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/asus_content_height2" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/asus_content_height2"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="@dimen/asus_content_margin_left_right">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/asus_content_main_color"
+                                android:textSize="@dimen/asus_content_main_size"
+                                android:text="@string/wifi_eap_ca_cert"
+                                android:layout_marginTop="@dimen/asus_content_margin_top"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/asus_content_summary_color"
+                                android:textSize="@dimen/asus_content_summary_size"
+                                android:text="@string/wifi_security_none"
+                                android:id="@+id/cert_summary"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/asusres_right_arrow"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/asus_content_margin_left_right" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/asus_divider_line"
+                            android:layout_marginLeft="@dimen/asus_content_margin_left_right"
+                            android:background="@color/asus_divider_area_color"
+                            android:layout_alignParentBottom="true" />
+
+                        <!--<Spinner android:id="@+id/ca_cert"
+                                style="@style/wifi_item_content"
+                                android:prompt="@string/wifi_eap_ca_cert"
+                            android:visibility="gone"/>-->
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/l_user_cert"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/asus_content_height2" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/asus_content_height2"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="@dimen/asus_content_margin_left_right">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/asus_content_main_color"
+                                android:textSize="@dimen/asus_content_main_size"
+                                android:text="@string/wifi_eap_user_cert"
+                                android:layout_marginTop="@dimen/asus_content_margin_top"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/asus_content_summary_color"
+                                android:textSize="@dimen/asus_content_summary_size"
+                                android:text="@string/wifi_security_none"
+                                android:id="@+id/user_cert_summary"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/asusres_right_arrow"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/asus_content_margin_left_right" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/asus_divider_line"
+                            android:layout_marginLeft="@dimen/asus_content_margin_left_right"
+                            android:background="@color/asus_divider_area_color"
+                            android:layout_alignParentBottom="true" />
+
+                        <!--<Spinner android:id="@+id/user_cert"
+                                style="@style/wifi_item_content"
+                                android:prompt="@string/wifi_eap_user_cert" />-->
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/l_identity"
+                        android:visibility="gone"
+                        style="@style/edit_item">
+                        <EditText
+                            android:id="@+id/identity"
+                            style="@style/wifi_item_content"
+                            android:singleLine="true"
+                            android:hint="@string/wifi_eap_identity"
+                            android:inputType="textNoSuggestions"
+                            android:textCursorDrawable="@null"
+                            android:background="@null"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/asus_content_margin_left_right"
+                            android:textSize="@dimen/asus_actionbar_main_text_size"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/asus_divider_line"
+                            android:background="@color/asus_divider_area_color"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="@dimen/asus_content_margin_left_right"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/l_anonymous"
+                        android:visibility="gone"
+                        style="@style/edit_item" >
+
+                        <EditText
+                            android:id="@+id/anonymous"
+                            style="@style/wifi_item_content"
+                            android:singleLine="true"
+                            android:inputType="textNoSuggestions"
+                            android:hint="@string/wifi_eap_anonymous"
+                            android:textCursorDrawable="@null"
+                            android:background="@null"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/asus_content_margin_left_right"
+                            android:textSize="@dimen/asus_actionbar_main_text_size"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/asus_divider_line"
+                            android:background="@color/asus_divider_area_color"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="@dimen/asus_content_margin_left_right"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/password_layout"
+                    android:layout_height="@dimen/asus_content_height1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal">
+                    <!--<TextView
+                            style="@style/wifi_item_label"
+                            android:text="@string/wifi_password" />-->
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/asus_content_margin_left_right"
+                        android:singleLine="true"
+                        android:password="true"
+                        android:textCursorDrawable="@null"
+                        android:background="@null"
+                        android:hint="@string/enter_password_hint"
+                        android:textSize="@dimen/asus_actionbar_main_text_size"
+                        android:layout_gravity="center_vertical"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/asus_content_margin_left_right"
+                        android:src="@drawable/asusres_icon_hide_uncheck"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/show_password"/>
+                </LinearLayout>
+
+                <!--<LinearLayout android:id="@+id/show_password_layout"
+                        style="@style/wifi_item" >
+                    <TextView
+                        style="@style/wifi_item_label"
+                        android:visibility="gone" />
+
+                    <CheckBox android:id="@+id/show_password"
+                        style="@style/wifi_item_content"
+                        android:textSize="14sp"
+                        android:text="@string/wifi_show_password" />
+                </LinearLayout>-->
+            </LinearLayout>
+
+
+                 <!--
+                <Button android:id="@+id/wifi_block_button"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:visibility="gone" />
+                -->
+
+            <LinearLayout android:id="@+id/wifi_block"
+                        style="@style/wifi_item"
+                        android:visibility="gone">
+                    <CheckBox android:id="@+id/wifi_block_checkbox"
+                    android:textSize="14sp"
+                    android:layout_width ="match_parent"
+                    android:layout_height ="wrap_content"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/wifi_advanced_toggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/asus_divider_area_height"
+                    android:background="@color/asus_divider_area_color"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/asus_content_head_height"
+                    android:gravity="center_vertical"
+                    android:text="@string/advanced_settings_info"
+                    android:layout_marginLeft="@dimen/asus_content_margin_left_right"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/asus_divider_line"
+                    android:background="@color/asus_divider_area_color" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/asus_content_height1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/asus_content_margin_left_right"
+                        android:text="@string/advanced_settings"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/button_enable_color"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/CustomSwitchTheme"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/asus_content_margin_left_right"
+                        android:id="@+id/wifi_advanced_togglebox"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/asus_divider_line"
+                        android:layout_marginLeft="@dimen/asus_content_margin_left_right"
+                        android:background="@color/asus_divider_area_color"
+                        android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/wifi_advanced_fields"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/proxy_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/asus_content_height2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/asus_content_height2"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="@dimen/asus_content_margin_left_right">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/button_disable_color"
+                            android:textSize="@dimen/asus_content_main_size"
+                            android:text="@string/proxy_settings_title"
+                            android:layout_marginTop="@dimen/asus_content_margin_top"
+                            android:id="@+id/proxy_settings_text"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/asus_content_summary_color"
+                            android:textSize="@dimen/asus_content_summary_size"
+                            android:text="@string/wifi_security_none"
+                            android:id="@+id/proxy_summary"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:src="@drawable/asusres_right_arrow"
+                        style="@style/content_icon_item"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/asus_divider_line"
+                        android:layout_marginLeft="@dimen/asus_content_margin_left_right"
+                        android:background="@color/asus_divider_area_color"
+                        android:layout_alignParentBottom="true"/>
+
+                    <!--<Spinner android:id="@+id/proxy_settings"
+                            style="@style/wifi_item_content"
+                            android:prompt="@string/proxy_settings_title"
+                            android:entries="@array/wifi_proxy_settings"
+                        android:visibility="gone"/>-->
+                </RelativeLayout>
+
+                <!--<LinearLayout android:id="@+id/proxy_warning_limited_support"
+                            style="@style/wifi_item"
+                            android:visibility="gone">
+                          Dummy to enable right-justification of warning
+                        <TextView
+                            style="@style/wifi_item_label" />
+
+                        <TextView
+                            style="@style/wifi_item_content"
+                            android:text="@string/proxy_warning_limited_support" />
+                </LinearLayout>-->
+
+                <LinearLayout android:id="@+id/proxy_pac_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/wifi_section"
+                    android:visibility="gone">
+                    <RelativeLayout
+                        style="@style/edit_item">
+
+                        <EditText android:id="@+id/proxy_pac"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/wifi_item_content"
+                            android:hint="@string/proxy_pac_hint"
+                            android:inputType="textNoSuggestions"
+                            android:singleLine="true"
+                            android:background="@null"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/asus_content_margin_left_right"
+                            android:textSize="@dimen/asus_actionbar_main_text_size"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/asus_divider_line"
+                            android:background="@color/asus_divider_area_color"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="@dimen/asus_content_margin_left_right"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/proxy_fields"
+                        style="@style/wifi_section"
+                        android:visibility="gone">
+
+                    <RelativeLayout style="@style/edit_item">
+                        <EditText
+                            android:id="@+id/proxy_hostname"
+                            style="@style/wifi_item_content"
+                            android:hint="@string/proxy_hostname_hint"
+                            android:inputType="textNoSuggestions"
+                            android:textCursorDrawable="@null"
+                            android:background="@null"
+                            android:singleLine="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/asus_content_margin_left_right"
+                            android:textSize="@dimen/asus_actionbar_main_text_size"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/asus_divider_line"
+                            android:background="@color/asus_divider_area_color"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="@dimen/asus_content_margin_left_right"/>
+                    </RelativeLayout>
+                    <RelativeLayout style="@style/edit_item">
+
+                        <EditText
+                            android:id="@+id/proxy_port"
+                            style="@style/wifi_item_content"
+                            android:hint="@string/proxy_port_hint"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@null"
+                            android:background="@null"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/asus_content_margin_left_right"
+                            android:textSize="@dimen/asus_actionbar_main_text_size"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/asus_divider_line"
+                            android:background="@color/asus_divider_area_color"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="@dimen/asus_content_margin_left_right"/>
+                    </RelativeLayout>
+                    <RelativeLayout style="@style/edit_item">
+
+                        <EditText
+                            android:id="@+id/proxy_exclusionlist"
+                            style="@style/wifi_item_content"
+                            android:hint="@string/proxy_exclusionlist_hint"
+                            android:inputType="textNoSuggestions"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@null"
+                            android:background="@null"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/asus_content_margin_left_right"
+                            android:textSize="@dimen/asus_actionbar_main_text_size"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/asus_divider_line"
+                            android:background="@color/asus_divider_area_color"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="@dimen/asus_content_margin_left_right"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ip_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/asus_content_height2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/asus_content_height2"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="@dimen/asus_content_margin_left_right">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/button_disable_color"
+                            android:textSize="@dimen/asus_content_main_size"
+                            android:text="@string/wifi_ip_settings"
+                            android:layout_marginTop="@dimen/asus_content_margin_top"
+                            android:id="@+id/ip_settings_text"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/asus_content_summary_color"
+                            android:textSize="@dimen/asus_content_summary_size"
+                            android:text="@string/wifi_security_none"
+                            android:id="@+id/ip_summary"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        style="@style/content_icon_item"
+                        android:src="@drawable/asusres_right_arrow"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/asus_divider_line"
+                        android:layout_marginLeft="@dimen/asus_content_margin_left_right"
+                        android:background="@color/asus_divider_area_color"
+                        android:layout_alignParentBottom="true"/>
+
+                    <!--<Spinner android:id="@+id/ip_settings"
+                            style="@style/wifi_item_content"
+                            android:prompt="@string/wifi_ip_settings"
+                            android:entries="@array/wifi_ip_settings"
+                        android:visibility="gone"/>-->
+
+                </RelativeLayout>
+
+                <LinearLayout android:id="@+id/staticip"
+                        style="@style/wifi_section"
+                        android:visibility="gone">
+                    <RelativeLayout
+                            style="@style/edit_item" >
+
+                        <EditText
+                            android:id="@+id/ipaddress"
+                            style="@style/wifi_item_content"
+                            android:singleLine="true"
+                            android:hint="@string/wifi_ip_address_hint"
+                            android:inputType="textNoSuggestions"
+                            android:textCursorDrawable="@null"
+                            android:background="@null"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/asus_content_margin_left_right"
+                            android:textSize="@dimen/asus_actionbar_main_text_size"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/asus_divider_line"
+                            android:background="@color/asus_divider_area_color"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="@dimen/asus_content_margin_left_right"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                            style="@style/edit_item" >
+
+                        <EditText
+                            android:id="@+id/gateway"
+                            style="@style/wifi_item_content"
+                            android:singleLine="true"
+                            android:hint="@string/wifi_gateway_hint"
+                            android:inputType="textNoSuggestions"
+                            android:textCursorDrawable="@null"
+                            android:background="@null"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/asus_content_margin_left_right"
+                            android:textSize="@dimen/asus_actionbar_main_text_size"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/asus_divider_line"
+                            android:background="@color/asus_divider_area_color"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="@dimen/asus_content_margin_left_right"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                            style="@style/edit_item" >
+
+                        <EditText
+                            android:id="@+id/network_prefix_length"
+                            style="@style/wifi_item_content"
+                            android:singleLine="true"
+                            android:hint="@string/wifi_network_prefix_length_hint"
+                            android:inputType="number"
+                            android:textCursorDrawable="@null"
+                            android:background="@null"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/asus_content_margin_left_right"
+                            android:textSize="@dimen/asus_actionbar_main_text_size"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/asus_divider_line"
+                            android:background="@color/asus_divider_area_color"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="@dimen/asus_content_margin_left_right"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                            style="@style/edit_item" >
+
+                        <EditText
+                            android:id="@+id/dns1"
+                            style="@style/wifi_item_content"
+                            android:singleLine="true"
+                            android:hint="@string/wifi_dns1_hint"
+                            android:inputType="textNoSuggestions"
+                            android:textCursorDrawable="@null"
+                            android:background="@null"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/asus_content_margin_left_right"
+                            android:textSize="@dimen/asus_actionbar_main_text_size"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/asus_divider_line"
+                            android:background="@color/asus_divider_area_color"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="@dimen/asus_content_margin_left_right"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                            style="@style/edit_item" >
+
+                        <EditText
+                            android:id="@+id/dns2"
+                            style="@style/wifi_item_content"
+                            android:singleLine="true"
+                            android:hint="@string/wifi_dns2_hint"
+                            android:inputType="textNoSuggestions"
+                            android:textCursorDrawable="@null"
+                            android:background="@null"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/asus_content_margin_left_right"
+                            android:textSize="@dimen/asus_actionbar_main_text_size"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/asus_divider_line"
+                            android:background="@color/asus_divider_area_color"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="@dimen/asus_content_margin_left_right"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/asus_bottom_bar_height"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/asus_action_bottom_bar_color">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/wifi_cancel"
+            android:textColor="@color/button_enable_color"
+            android:id="@+id/cancel"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/wifi_connect"
+            android:textColor="@color/button_disable_color"
+            android:enabled="false"
+            android:id="@+id/connect"/>
+
+    </LinearLayout>
+</LinearLayout>

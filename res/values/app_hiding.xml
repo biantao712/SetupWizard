@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<resources>
+    <!-- Packages need to be removed -->
+    <string-array name="config_packagesNeedRemove">
+    </string-array>
+</resources>

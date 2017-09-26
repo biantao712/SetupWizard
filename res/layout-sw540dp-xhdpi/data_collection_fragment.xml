@@ -1,0 +1,167 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.asus.cnsetupwizard.DataCollectionActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/data_collection_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/area_1"
+            android:layout_width="match_parent"
+            android:layout_height="333dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@color/theme_color"
+            android:layout_gravity="center_horizontal|top">
+
+            <TextView
+                android:id="@+id/data_collection_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/welcome_textview_height"
+                android:gravity="center"
+                android:text="@string/data_collection_title"
+                style="@style/ad_title_text"
+                android:layout_centerHorizontal="true"
+                android:textSize="22sp"
+                android:singleLine="false"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="74dp"
+                android:gravity="center"
+                android:src="@drawable/icon_book"
+                android:id="@+id/imageView"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <ScrollView
+                android:id="@+id/data_collection_eula_scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="@dimen/content_padding"
+                android:layout_marginRight="@dimen/content_padding"
+                android:layout_marginBottom="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/imageView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/data_collection_eula_scrollview_text_padding_left"
+                    android:paddingRight="@dimen/data_collection_eula_scrollview_text_padding_right"
+                    android:paddingTop="@dimen/data_collection_eula_scrollview_text_padding_top"
+                    android:orientation="vertical"
+                    android:background="@color/theme_color"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/data_collection_eula_textview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/data_collection_eula_msg"
+                        style="@style/preference_summary_style_3"
+                        android:lineSpacingExtra="@dimen/data_collection_line_spacing"
+                        android:layout_weight="0.43"
+                        android:layout_below="@+id/imageView"
+                        android:layout_above="@+id/data_collection_agreement_container">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/data_collection_eula_link_textview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@drawable/hyperlink_text_state_color" >
+                    </TextView>
+                </LinearLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/area_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@color/background_color"
+            android:layout_below="@+id/area_1"
+            android:paddingTop="25dp">
+
+            <RelativeLayout
+                android:id="@+id/data_collection_agreement_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/data_collection_agreement_container_minHeight"
+                android:visibility="visible"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/data_collection_agreement_tv"
+                    android:text="@string/data_collection_agreement_msg"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:layout_toRightOf="@+id/data_collection_agreement_checkbox"
+                    android:paddingLeft="8dp"
+                    android:color="#868686"
+                    android:lineSpacingExtra="@dimen/data_collection_line_spacing"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true">
+                </TextView>
+                <CheckBox
+                    android:id="@id/data_collection_agreement_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="0dp"
+                    style="@style/CustomCheckboxTheme" >
+                </CheckBox>
+            </RelativeLayout>
+        </LinearLayout>
+		<RelativeLayout
+			android:id="@+id/area_3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:gravity="center_horizontal"
+			android:background="@color/background_color"
+			android:layout_below="@+id/area_2">
+				<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:paddingBottom="45dp"
+				android:text="@string/data_collection_agreement_tips"
+				android:textSize="14sp"
+				android:fontFamily="sans-serif"
+				android:color="#868686">
+			</TextView>
+		</RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider"
+        style="@style/divider_2dp_height_transparent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/content_padding"
+        android:layout_marginRight="@dimen/content_padding"
+        android:background="@drawable/dividingline"
+        android:layout_below="@+id/data_collection_text"
+        android:layout_marginTop="60dp" />
+</FrameLayout>

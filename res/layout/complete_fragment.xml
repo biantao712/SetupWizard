@@ -1,0 +1,114 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color"
+    tools:context="com.asus.cnsetupwizard.AdvertActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <RelativeLayout
+        android:id="@+id/complete_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background_color">
+        
+        <com.asus.cnsetupwizard.GifView
+			android:id="@+id/gifView"
+			android:layout_width="match_parent"
+			android:layout_height="333dp"
+			android:layout_gravity="left|top"
+			android:src="@drawable/banner3" />
+
+        <RelativeLayout
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/gifView"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout3">
+            <TextView
+                android:id="@+id/install_confirm_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="25dp"
+                android:textSize="18sp"
+                android:textColor="#868686"
+                android:text="@string/install_confirm_question"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+        </RelativeLayout>
+
+        <com.asus.cnsetupwizard.AdScrollView
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/permissions_scrollview"
+            android:layout_below="@+id/relativeLayout3"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/button_exit"
+            android:layout_alignParentEnd="false"
+            android:layout_marginBottom="25dp">
+            <LinearLayout android:orientation="vertical"
+                android:id="@+id/permissions_scroll"
+                android:textSize="14sp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="12dp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            </LinearLayout>
+        </com.asus.cnsetupwizard.AdScrollView>
+
+        <!--ScrollView
+            android:layout_below="@id/install_confirm_question"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="136dp"
+            android:background="@drawable/img_bg_shengshi_text"
+            >
+            <LinearLayout android:orientation="vertical"
+                android:id="@+id/permissions_scroll"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="12dp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            </LinearLayout>
+        </ScrollView-->
+
+        <LinearLayout
+            android:id="@+id/bottom_container2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/install_confirm_question"
+            android:paddingTop="25dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:weightSum="1"></LinearLayout>
+
+        <Button
+            android:id="@+id/button_exit"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/adactivity_exit"
+            android:background="@drawable/ad_button_background"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_above="@+id/linearLayout2"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/linearLayout2"></LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

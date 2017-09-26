@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/area_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/asus_ationbar_height"
+        android:orientation="horizontal"
+        android:background="@color/asus_action_bottom_bar_color">
+
+        <ImageView
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/asus_actionbar_margin"
+            android:layout_centerVertical="true"
+            android:src="@drawable/asusres_ic_ab_back_holo_light" />
+        <TextView
+            android:id="@+id/actionbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/button_back"
+            android:layout_marginLeft="@dimen/asus_actionbar_content_margin"
+            android:text="@string/fingerprint_title"
+            android:textColor="@color/asus_content_main_color"
+            android:textSize="@dimen/asus_actionbar_main_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/area_title">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:text="@string/fingerprint_add_complete"
+            android:layout_marginTop="@dimen/fingerprint_title_margin_top"
+            android:textColor="@color/asus_content_main_color"
+            android:textSize="@dimen/fingerprint_title_size"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/info"
+            android:text="@string/fingerprint_add_complete_info"
+            android:layout_marginTop="@dimen/account_fragment_content_size"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/asus_content_summary_color"
+            android:textSize="@dimen/asus_content_main_size"
+            android:layout_marginRight="@dimen/select_network_summary_margin_left_right"
+            android:layout_marginLeft="@dimen/select_network_summary_margin_left_right"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/info"
+            android:layout_marginTop="@dimen/icon_margin_top"
+            android:src="@drawable/fingerprint_complete"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/asus_content_margin_left_right"
+            android:text="@string/wifi_cancel"
+            style="@style/bottom_text"/>
+
+        <TextView
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/asus_content_margin_left_right"
+            android:text="@string/next"
+            style="@style/bottom_text" />
+    </RelativeLayout>
+
+</RelativeLayout>

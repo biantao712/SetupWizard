@@ -1,0 +1,71 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.asus.cnsetupwizard.InspireAsusActivity">
+
+    <RelativeLayout
+        android:id="@+id/inspire_asus_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/area_title"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:background="@color/theme_color">
+
+            <ImageView
+                android:id="@+id/button_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+            	android:layout_centerVertical="true"
+                android:src="@drawable/btn_back" />
+            <TextView
+                android:id="@+id/data_collection_title_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/button_back"
+                android:paddingLeft="12dp"
+                android:text="@string/data_collection_title"
+                android:fontFamily="sans-serif"
+                android:textColor="#ffffff"
+                android:textSize="27sp"
+                android:singleLine="false"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/area_context"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/area_title">
+
+            <ScrollView
+                android:id="@+id/inspire_asus_scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="0dp"
+                android:layout_alignParentBottom="true">
+						<com.asus.cnsetupwizard.HTMLTextView
+							android:id="@+id/inspire_asus_textview"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:textSize="15sp"
+							android:textColor="#868686"
+							android:fontFamily="sans-serif"
+							android:lineSpacingExtra="10dp">
+						</com.asus.cnsetupwizard.HTMLTextView>
+            </ScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/asus_content_bg_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/head_height"
+        android:background="@drawable/bg"
+        android:orientation="vertical"
+        android:id="@+id/no_sim">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_sim"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/head_title_margin_top"
+            style="@style/head_title"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/head_summary_margin_top"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/no_sim"
+            style="@style/head_summary"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:layout_below="@+id/no_sim"
+        android:layout_marginTop="@dimen/icon_margin_top"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/no_sim"/>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/previous"
+            android:paddingLeft="@dimen/asus_content_margin_left_right"
+            style="@style/bottom_text" />
+
+        <TextView
+            android:id="@+id/skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/asus_content_margin_left_right"
+            android:text="@string/skip"
+            style="@style/bottom_text"/>
+    </RelativeLayout>
+
+</RelativeLayout>

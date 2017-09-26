@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wifi_settings_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color">
+        
+     <RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/theme_color"
+		 android:id="@+id/relativeLayout">
+			<RelativeLayout
+				android:id="@+id/left_relativelayout"
+				android:layout_marginTop="45dp"
+				android:layout_marginLeft="45dp"
+				android:layout_width="300dp"
+				android:layout_height="wrap_content">
+				<TextView
+					android:id="@+id/text_switch_cellular"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/select_wifi_title"
+					android:textSize="21sp"
+					android:fontFamily="sans-serif"
+					android:textColor="#ffffff" >
+				</TextView>
+				<TextView
+					android:id="@+id/text_cellular_declare"
+					android:layout_below="@+id/text_switch_cellular"
+					android:paddingTop="18dp"
+					android:paddingBottom="45dp"
+					android:textSize="15sp"
+					android:textColor="#ffffff"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/cellular_tips_no_sim"/>
+			</RelativeLayout>
+			<RelativeLayout
+					android:background="@color/theme_color"
+					android:layout_toRightOf="@+id/left_relativelayout"
+					android:layout_marginTop="45dp"
+					android:layout_marginRight="45dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+				<CheckBox
+					android:id="@+id/cellularswitch_checkbox"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="0dp"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					style="@style/CustomSwitchTheme" >
+				</CheckBox>
+			</RelativeLayout>
+	</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/list_add_network"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+		android:layout_below="@+id/relativeLayout"
+		android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wifi_add_network"
+                android:paddingTop="65dp"
+                android:paddingBottom="30dp"
+                android:paddingLeft="45dp"
+                style="@style/preference_category_title_style"
+                android:gravity="center"/>
+    </RelativeLayout>
+    
+    <ListView
+        android:id="@android:id/list"
+        android:background="#f0f0f0"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:drawSelectorOnTop="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:dividerHeight="@dimen/list_view_divider_height"
+        android:divider="@drawable/list_view_divider"
+		android:layout_below="@+id/list_add_network" />
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="300dp"
+		android:gravity="top"
+		android:layout_weight="0.88"
+		android:layout_below="@+id/list_add_network"
+		android:layout_alignParentStart="true"
+		android:id="@+id/relativeLayout2"
+		android:layout_above="@+id/linearLayout">
+
+	<com.asus.cnsetupwizard.wifi.WifiGridView
+		android:id="@+id/gridview"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="60dp"
+		android:paddingRight="60dp"
+		android:numColumns="auto_fit"
+		android:verticalSpacing="50dp"
+		android:horizontalSpacing="10dp"
+		android:columnWidth="90dp"
+		android:stretchMode="columnWidth"
+		android:gravity="center" />
+
+	</RelativeLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:layout_weight="0.27"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentStart="true"
+		android:id="@+id/linearLayout">
+	</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+	<string name="phone_protect_description_text" maxwidth="-1">裝置保護功能可避免他人在未經您允許的狀況下使用您的裝置：</string>
+	<string name="phone_protect_description_content_0" maxwidth="-1">防止他人在您的裝置已被恢復原廠設定時使用。</string>
+	<string name="phone_protect_description_content_1" maxwidth="-1">需要設定安全性螢幕鎖定如 PIN/密碼/圖形鎖以遠端保護您的裝置。</string>
+
+	<string name="phone_protect_complete_text" maxwidth="-1">螢幕鎖定已成功設定。</string>
+	<string name="phone_protect_title" maxwidth="-1">保護您的裝置</string>
+	<string name="screen_lock_now" maxwidth="-1">設定螢幕鎖定</string>
+	<string name="phone_protect_button_learnmore" maxwidth="-1">瞭解更多</string>
+	<string name="phone_protect_button_screenlock" maxwidth="-1">開始設定螢幕鎖定</string>
+	
+	<string name="phone_protect_adm_warning_title" maxwidth="-1">略過帳戶設定？</string>
+	<string name="phone_protect_adm_warning_subtitle" maxwidth="-1">您無法在未設定Google帳號時使用下列功能：</string>
+	<string name="phone_protect_adm_warning_content_0" maxwidth="-1">下載應用程式、音樂、遊戲以及其他來自Google Play商店的內容</string>
+	<string name="phone_protect_adm_warning_content_1" maxwidth="-1">將您的應用程式雲端備份至Google，以及在您的裝置上使用其他Google服務如行事曆或聯絡人</string>
+	<string name="phone_protect_adm_warning_content_2" maxwidth="-1">啟用Android裝置管理員以使用包含遠端遙控以及裝置保護功能</string>
+	<string name="phone_protect_adm_warning_message" maxwidth="-1">若略過帳戶設定，您將無法啟用Android裝置管理員以使用包含遠端遙控以及裝置保護功能。</string>
+	
+	<string name="phone_protect_skip_dialog_title" maxwidth="-1">略過裝置保護</string>
+	<string name="phone_protect_skip_dialog_content" maxwidth="-1">裝置保護功能將被停用。您將無法在裝置遺失、遭竊或被恢復原廠設定時防止他人使用此裝置。</string>
+	
+	<string name="phone_protect_button_goback">返回</string>
+	<string name="phone_protect_button_skip">仍要略過</string>
+	<string name="phone_protect_button_dontskipk">不要略過</string>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/asus_content_height1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/asus_content_margin_left_right"
+            android:text="@string/cellular_data"
+            android:layout_centerVertical="true"
+            android:textColor="@color/asus_content_main_color"
+            android:textSize="@dimen/asus_content_main_size"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/CustomSwitchTheme"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/asus_content_margin_left_right"
+            android:id="@+id/cellular_switch"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/asus_divider_area_height"
+        android:background="@color/asus_divider_area_color"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/asus_content_height1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/asus_content_margin_left_right"
+            android:text="@string/wifi"
+            android:layout_centerVertical="true"
+            android:textColor="@color/asus_content_main_color"
+            android:textSize="@dimen/asus_content_main_size"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/CustomSwitchTheme"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/asus_content_margin_left_right"
+            android:id="@+id/wifi_switch"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/asus_divider_line"
+        android:background="@color/asus_divider_area_color"
+        android:layout_marginLeft="@dimen/asus_content_margin_left_right"/>
+
+</LinearLayout>

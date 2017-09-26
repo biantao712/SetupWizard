@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+ <resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="ime_security_warning" msgid="4135828934735934248">"此輸入法可能會收集您輸入的所有文字，包括密碼和信用卡號等個人資料。此輸入法來自「<xliff:g id="IME_APPLICATION_NAME">%1$s</xliff:g>」應用程式。是否要使用此輸入法？"</string>
+    <string name="active_input_method_subtypes" msgid="3596398805424733238">"啟用的輸入法"</string>
+    <string name="use_system_language_to_select_input_method_subtypes" msgid="3346751753141428573">"使用系統設定"</string>
+
+    <string name="add_account_label" msgid="7811707265834013767">"新增帳戶"</string>
+
+    <string name="accessibility_sync_enabled" msgid="558480439730263116">"同步處理已啟用"</string>
+    <string name="accessibility_sync_disabled" msgid="1741194106479011384">"同步處理已停用"</string>
+    <string name="accessibility_sync_error" msgid="8703299118794272041">"同步處理錯誤。"</string>
+    <string name="sync_failed" msgid="1696499856374109647">"同步處理失敗"</string>
+    <string name="sync_active" msgid="8476943765960863040">"同步處理已啟用"</string>
+
+    <!-- Sync status messages on Accounts & Synchronization settings --><skip />
+    <string name="sync_enabled" msgid="4551148952179416813">"已開啟同步處理功能"</string>
+    <string name="sync_disabled" msgid="8511659877596511991">"已關閉同步處理功能"</string>
+    <string name="sync_error" msgid="5060969083117872149">"同步處理錯誤"</string>
+    <string name="last_synced" msgid="4242919465367022234">"上次同步處理時間：<xliff:g id="LAST_SYNC_TIME">%1$s</xliff:g>"</string>
+    <string name="sync_in_progress" msgid="5151314196536070569">"目前正在同步處理..."</string>
+
+    <string name="sync_one_time_sync" msgid="6766593624598183090">"輕觸此處可開始同步化 <xliff:g id="LAST_SYNC_TIME">
+%1$s</xliff:g>"</string>
+    <!-- no translation found for sync_item_title (4782834606909853006) -->
+    <skip />
+
+    <string name="zone_auto" msgid="334783869352026648">"自動判定時區"</string>
+    <string name="date_time_auto" msgid="7076906458515908345">"自動判斷日期和時間"</string>
+    <string name="date_time_auto_summaryOn" msgid="4609619490075140381">"使用網路提供的時間"</string>
+    <string name="date_time_auto_summaryOff" msgid="8698762649061882791">"使用網路提供的時間"</string>
+    <string name="date_time_set_time" msgid="5716856602742530696">"設定時間"</string>
+    <string name="date_time_set_timezone" msgid="5045627174274377814">"選取時區"</string>
+    <string name="date_time_set_date" msgid="7021491668550232105">"設定日期"</string>
+    <string name="date_picker_title" msgid="1338210036394128512">"日期"</string>
+    <string name="time_picker_title" msgid="483460752287255019">"時間"</string>
+
+    <string name="proxy_settings_title" msgid="5912878565897294401">"Proxy 設定"</string>
+    <string name="proxy_clear_text" msgid="5555400754952012657">"清除"</string>
+    <string name="proxy_port_label" msgid="5655276502233453400">"Proxy 通訊埠"</string>
+    <string name="proxy_exclusionlist_label" msgid="7700491504623418701">"略過以下 Proxy："</string>
+    <string name="proxy_exclusionlist_hint" msgid="6084099226687226948">"對以下網址不使用代理 例:example.com,web"</string>
+    <string name="proxy_defaultView_text" msgid="6387985519141433291">"還原預設值"</string>
+    <string name="proxy_action_text" msgid="2957063145357903951">"完成"</string>
+    <string name="proxy_hostname_label" msgid="8490171412999373362">"Proxy 主機名稱"</string>
+    <string name="proxy_hostname_hint" msgid="2076157057003936176">"輸入主機名稱 例:proxy.example.com"</string>
+    <string name="proxy_error" msgid="8926675299638611451">"注意"</string>
+    <string name="proxy_error_dismiss" msgid="4993171795485460060">"確定"</string>
+    <string name="proxy_error_invalid_host" msgid="8052095511862922213">"您所輸入的主機名稱無效。"</string>
+    <string name="proxy_error_invalid_exclusion_list" msgid="6467799485443290961">"您所輸入的排除清單格式有誤，請輸入以英文逗點分隔的排除網域清單。"</string>
+    <string name="proxy_error_empty_port" msgid="5539106187558215246">"您必須填寫通訊埠欄位。"</string>
+    <string name="proxy_error_empty_host_set_port" msgid="2451694104858226781">"若主機欄位空白，連接埠欄位也須空白。"</string>
+    <string name="proxy_error_invalid_port" msgid="2671425042711054494">"您所輸入的通訊埠無效。"</string>
+    <string name="proxy_warning_limited_support" msgid="7229337138062837422">"瀏覽器會使用 HTTP Proxy，但其他應用程式不一定會採用這項設定。"</string>
+
+    <!-- Wi-Fi Settings --> <skip />
+    <string name="wifi_settings_category" msgid="2810363951104753710">"Wi-Fi 設定"</string>
+    <string name="wifi_starting" msgid="6716593470710880000">"Wi-Fi 開啟中…"</string>
+    <string name="wifi_stopping" msgid="244864762599017659">"正在關閉 Wi-Fi…"</string>
+    <string name="wifi_error" msgid="3207971103917128179">"錯誤"</string>
+    <string name="wifi_in_airplane_mode" msgid="8652520421778203796">"處於飛行模式時"</string>
+    <string name="wifi_fail_to_scan" msgid="1265540342578081461">"無法掃描網路"</string>
+    <string name="wifi_scan_notify_text_location_on" msgid="8135076005488914200">"為了提升定位精確度及用於其他用途，Google 和其他應用程式可能會掃描附近的 Wi-Fi 網路 (即使 Wi-Fi 連線功能已關閉)。如果您不想授予這項權限，可隨時前往 [進階] &gt; [掃描] 變更設定。"</string>
+    <string name="wifi_scan_notify_text_location_off" msgid="6323983741393280935">"應用程式可能會掃描附近的網路 (即使 Wi-Fi 連線功能已關閉)。如果您不想授予這項權限，可隨時前往 [進階] &gt; [掃描] 變更設定。"</string>
+    <string name="wifi_menu_connect" msgid="4996220309848349408">"連線至網路"</string>
+    <string name="wifi_menu_forget" msgid="8736964302477327114">"清除網路"</string>
+    <string name="wifi_menu_modify" msgid="2068554918652440105">"修改網路"</string>
+    <string name="wifi_empty_list_wifi_off" msgid="4722299515264875943">"如要查看可用的網路，請開啟 Wi-Fi。"</string>
+    <string name="wifi_empty_list_wifi_on" msgid="3354911729026237372">"正在搜尋  Wi-Fi 網路..."</string>
+    <string name="wifi_empty_list_user_restricted" msgid="8280257225419947565">"您沒有變更 Wi-Fi 網路的權限。"</string>
+
+    <!-- Dialog for Access Points --> <skip />
+    <string name="wifi_show_advanced" msgid="1793703023711426246">"顯示進階選項"</string>
+    <string name="wifi_ssid" msgid="641393708309146745">"網路 SSID"</string>
+    <string name="wifi_ssid_hint" msgid="897593601067321355">"輸入 SSID"</string>
+    <string name="wifi_security" msgid="6603611185592956936">"安全性"</string>
+    <string name="wifi_signal" msgid="5514120261628065287">"訊號強度"</string>
+    <string name="wifi_status" msgid="4824568012414605414">"狀態"</string>
+    <string name="wifi_speed" msgid="3526198708812322037">"連線速度"</string>
+    <string name="wifi_ip_address" msgid="1440054061044402918">"IP 位址"</string>
+    <string name="wifi_eap_method" msgid="8529436133640730382">"EAP 方法"</string>
+    <string name="please_select_phase2" msgid="5231074529772044898">"階段 2 驗證"</string>
+    <string name="wifi_eap_ca_cert" msgid="3521574865488892851">"CA 憑證"</string>
+    <string name="wifi_eap_user_cert" msgid="1291089413368160789">"使用者憑證"</string>
+    <string name="wifi_eap_identity" msgid="4359453783379679103">"身分"</string>
+    <string name="wifi_eap_anonymous" msgid="2989469344116577955">"匿名身分"</string>
+    <string name="wifi_password" msgid="5948219759936151048">"密碼"</string>
+    <string name="wifi_show_password" msgid="6461249871236968884">"顯示密碼"</string>
+    <string name="wifi_ip_settings" msgid="3359331401377059481">"IP 設定"</string>
+    <string name="wifi_unchanged" msgid="3410422020930397102">"(未變更)"</string>
+    <string name="wifi_unspecified" msgid="5431501214192991253">"(未指定)"</string>
+    <string name="wifi_remembered" msgid="4955746899347821096">"已儲存"</string>
+    <string name="wifi_disabled_generic" msgid="4259794910584943386">"已停用"</string>
+    <string name="wifi_disabled_network_failure" msgid="3111321240793227690">"已避開品質不佳的網際網路連線"</string>
+    <string name="wifi_disabled_password_failure" msgid="8659805351763133575">"驗證問題"</string>
+    <string name="wifi_not_in_range" msgid="1136191511238508967">"不在有效範圍內"</string>
+    <string name="wifi_wps_available_first_item" msgid="4422547079984583502">"可使用 WPS"</string>
+    <string name="wifi_wps_available_second_item" msgid="8427520131718215301">" (可使用 WPS)"</string>
+    <string name="wifi_secured_first_item" msgid="4072076186051083451">"透過 <xliff:g id="WIFI_SECURITY_SHORT">%1$s</xliff:g> 加密保護"</string>
+    <string name="wifi_secured_second_item" msgid="1326000076939056265">"，透過 <xliff:g id="WIFI_SECURITY_SHORT">%1$s</xliff:g> 加密保護"</string>
+
+    <string name="wifi_security_none" msgid="7985461072596594400">"無"</string>
+
+    <string name="wifi_connect" msgid="1076622875777072845">"連線"</string>
+    <string name="wifi_failed_connect_message" msgid="8491902558970292871">"無法連線至網路"</string>
+    <string name="wifi_forget" msgid="8168174695608386644">"清除"</string>
+    <string name="wifi_failed_forget_message" msgid="1348172929201654986">"無法刪除網路"</string>
+    <string name="wifi_save" msgid="3331121567988522826">"儲存"</string>
+    <string name="wifi_failed_save_message" msgid="6650004874143815692">"無法儲存網路"</string>
+    <string name="wifi_cancel" msgid="6763568902542968964">"取消"</string>
+
+    <!-- Wi-Fi Advanced Settings --> <skip />
+    <string name="wifi_ip_settings_invalid_ip_address" msgid="2513142355364274970">"請輸入有效的 IP 位址。"</string>
+    <string name="wifi_ip_settings_invalid_gateway" msgid="8164264988361096450">"輸入有效的閘道位址。"</string>
+    <string name="wifi_ip_settings_invalid_dns" msgid="8744583948328391047">"請輸入有效的 DNS 位址。"</string>
+    <string name="wifi_ip_settings_invalid_network_prefix_length" msgid="40470058023181052">"輸入長度介於 0 到 32 之間的網路前置碼。"</string>
+    <string name="wifi_dns1" msgid="7344118050720080045">"DNS 1"</string>
+    <string name="wifi_dns2" msgid="1368601006824882659">"DNS 2"</string>
+    <string name="wifi_gateway" msgid="163914742461092086">"閘道"</string>
+    <string name="wifi_network_prefix_length" msgid="3028785234245085998">"網路前置碼長度"</string>
+
+    <!-- Security Picker --><skip />
+    <string name="lock_settings_picker_title" msgid="1095755849152582712">"選擇螢幕鎖定方式"</string>
+    <string name="previous">上一步</string>
+    <string name="skip">跳轉</string>
+    <string name="cellular_data">移動數據</string>
+    <string name="wifi">WLAN</string>
+    <string name="add_wifi_network">添加網絡</string>
+    <string name="enter_password_hint">請輸入密碼</string>
+    <string name="advanced_settings">高級設置</string>
+    <string name="advanced_settings_info">高級設置信息</string>
+    <string name="wifi_security_info">安全性信息</string>
+    <string name="connnect_network">連接網絡</string>
+    <string name="modify_network">修改網絡</string>
+    <string name="disconnnect_network">斷開連接</string>
+    <string name="delete_network">刪除保存</string>
+    <string name="ignore_network">忽略此網絡</string>
+    <string name="fingerprint">指紋觸控</string>
+    <string name="fingerprint_check">指紋校驗</string>
+    <string name="fingerprint_check_info">使用指紋來喚醒解鎖你的手機，對購買交易進行授權或者登陸應用</string>
+    <string name="add_fingerprint">添加指紋</string>
+    <string name="select_screen_lock_info">請選擇要與指紋搭配使用的設備屏幕鎖定方式</string>
+    <string name="fingerprint_and_number">指紋 + 數位密碼</string>
+    <string name="fingerprint_and_pattern">指紋 + 圖案密碼</string>
+    <string name="fingerprint_and_mixture">指紋 + 混合密碼</string>
+    <string name="find_fingerprint">尋找傳感器</string>
+    <string name="place_finger">放置手指</string>
+    <plurals name="lockpassword_password_requires_letters" formatted="false" msgid="5677371623980347934">
+        <item quantity="other">密碼至少必須包含 %d 個字母。</item>
+        <item quantity="one">密碼至少必須包含 1 個字母。</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase" formatted="false" msgid="5396846200894553640">
+        <item quantity="other">密碼至少必須包含 %d 個小寫字母。</item>
+        <item quantity="one">密碼至少必須包含 1 個小寫字母。</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase" formatted="false" msgid="2483949715040341677">
+        <item quantity="other">密碼至少必須包含 %d 個大寫字母。</item>
+        <item quantity="one">密碼至少必須包含 1 個大寫字母。</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric" formatted="false" msgid="9156410893744210033">
+        <item quantity="other">密碼至少必須包含 %d 個數字。</item>
+        <item quantity="one">密碼至少必須包含 1 個數字。</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols" formatted="false" msgid="5384442837439742233">
+        <item quantity="other">密碼至少必須包含 %d 個特殊符號。</item>
+        <item quantity="one">密碼至少必須包含 1 個特殊符號。</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter" formatted="false" msgid="4175064976268466293">
+        <item quantity="other">密碼至少必須包含 %d 個非字母字元。</item>
+        <item quantity="one">密碼至少必須包含 1 個非字母字元。</item>
+    </plurals>
+    <string name="lockpassword_password_too_short" msgid="7328975683669256660">"4~17個字符，且必須包含字母"</string>
+    <string name="lockpassword_pin_too_short" msgid="1677649103470518953">"密碼由4~17位數字組成"</string>
+    <string name="lockpassword_continue_label" msgid="4602203784934526940">"繼續"</string>
+    <string name="lockpassword_password_too_long" msgid="7016906583950201704">"密碼必須少於 <xliff:g id="NUMBER">%d</xliff:g> 個字元。"</string>
+    <string name="lockpassword_pin_too_long" msgid="6419879099090294052">"PIN 最多只能有 <xliff:g id="NUMBER">%d</xliff:g> 個數字。"</string>
+    <string name="lockpassword_pin_contains_non_digits" msgid="1079053457942945709">"PIN 只能包含數字 0-9。"</string>
+    <string name="lockpassword_pin_recently_used" msgid="214840704635573454">"裝置管理員不允許使用最近用過的 PIN。"</string>
+    <string name="lockpassword_illegal_character" msgid="8742901630116866738">"密碼含有無效的字元。"</string>
+    <string name="lockpassword_password_requires_alpha" msgid="5203836082520634764">"密碼至少必須包含 1 個字母。"</string>
+    <string name="lockpassword_password_requires_digit" msgid="3958033271435659825">"密碼至少必須包含 1 個數字。"</string>
+    <string name="lockpassword_password_requires_symbol" msgid="7226621405629726899">"密碼至少必須包含 1 個符號。"</string>
+    <string name="enter_password">請輸入新密碼</string>
+    <string name="enter_pin_title">輸入數字密碼</string>
+    <string name="enter_password_title">輸入混合密碼</string>
+    <string name="add_pattern">繪製解鎖圖案</string>
+    <string name="pattern_info1">請至少連接4個點</string>
+    <string name="pattern_info2">完成後鬆手</string>
+    <string name="pattern_info3">圖案已記錄</string>
+    <string name="to_next">繼續</string>
+    <string name="fingerprint_position_front">您可以在手機前側找到指紋感測器</string>
+    <string name="fingerprint_position_back">您可以在手機後側找到指紋感測器</string>
+    <string name="fingerprint_add_info1">將您的手指放在指紋感測器上，感覺到震動後移開手指</string>
+    <string name="fingerprint_add_info2">略微移動手指，以便感測器更完整的記錄下指紋，感覺到震動後移開手指</string>
+    <string name="fingerprint_add_complete">添加完成</string>
+    <string name="fingerprint_add_complete_info">只要您看見此圖示，就可以使用指紋進行身份驗證或對購買交易進行授權</string>
+    <string name="next">下一步</string>
+    <string name="lockpassword_confirm_your_password_header" msgid="6308478184889846633">""</string>
+    <string name="lockpassword_confirm_your_pin_header" msgid="49038294648213197">""</string>
+    <string name="lockpassword_ok_label" msgid="313822574062553672">"確認"</string>
+    <string name="lockpassword_confirm_passwords_dont_match" msgid="5140892109439191415">"密碼不符"</string>
+    <string name="lockpassword_confirm_pins_dont_match" msgid="7226244811505606217">"PIN 碼不符"</string>
+    <string name="add_sim">插入SIM卡</string>
+    <string name="no_sim">未檢測到SIM卡</string>
+    <string name="proxy_port_hint">輸入代理主機端口 默認:8080</string>
+    <string name="wifi_ip_address_hint">"輸入IPv4地址 例：192.168.1.128"</string>
+    <string name="wifi_gateway_hint">"輸入网关 例：192.168.1.1"</string>
+    <string name="wifi_network_prefix_length_hint">"輸入網絡前綴長度 默認：24"</string>
+    <string name="wifi_dns1_hint">"輸入DNS1 例：8.8.8.8"</string>
+    <string name="wifi_dns2_hint">"輸入DNS2 例：8.8.8.8"</string>
+    <string name="lockpattern_need_to_confirm" msgid="8054853451639221265">"請再次畫出圖案，以確認圖案無誤"</string>
+    <string name="lockpattern_settings_help_how_to_record" msgid="2614673439060830433">"如何畫出解鎖圖案"</string>
+    <string name="lockpattern_recording_incorrect_too_short" msgid="1348234155120957561">"圖案至少需連接 <xliff:g id="NUMBER">%d</xliff:g> 點，請再試一次。"</string>
+    <string name="lockpattern_need_to_unlock_wrong" msgid="1745247595356012176">"圖案錯誤"</string>
+    <string name="lockpattern_pattern_confirmed_header" msgid="8455614172231880211">"您的新解鎖圖案"</string>
+    <string name="fingerprint_title">指紋</string>
+    <string name="confirm_password">請確認密碼</string>
+    <string name="emergency_call">緊急呼叫</string>
+    <string name="lockpassword_invalid_password">密碼錯誤</string>
+    <string name="lockpattern_too_many_failed_confirmation_attempts">"請於 <xliff:g id="NUMBER">%d</xliff:g> 秒後再試</string>
+    <string name="proxy_pac_hint">輸入PAC 網址  例: https://www.example.com</string>
+    <string name="cloud_launcher">省事兒4.0</string>
+
+</resources>

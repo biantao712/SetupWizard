@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/popup_window_drawable"
+              android:id="@+id/long_click_layout">
+
+    <TextView
+        android:layout_width="@dimen/popup_width"
+        android:layout_height="@dimen/asus_pupop_title_height"
+        android:textSize="16dp"
+        android:textColor="@color/asus_content_main_color"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/title"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/asus_divider_line"
+        android:background="@color/asus_bar_divider_line_color"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/asus_content_height1"
+        android:id="@+id/connnect_network">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/asus_content_height1"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/asus_popup_content_margin_left_right"
+            android:textSize="15dp"
+            android:textColor="@color/preference_category_text_color"
+            android:text="@string/connnect_network"/>
+        <View android:id="@+id/connect_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/asus_divider_line"
+            android:background="#d4d4d4"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/asus_content_height1"
+        android:id="@+id/modify_network">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/asus_content_height1"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/asus_popup_content_margin_left_right"
+            android:textSize="15dp"
+            android:textColor="@color/preference_category_text_color"
+            android:text="@string/modify_network"/>
+        <View android:id="@+id/modify_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/asus_divider_line"
+            android:background="#d4d4d4"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/asus_content_height1"
+        android:id="@+id/disconnnect_network">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/asus_content_height1"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/asus_popup_content_margin_left_right"
+            android:textSize="@dimen/asus_content_main_size"
+            android:textColor="@color/preference_category_text_color"
+            android:text="@string/disconnnect_network"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/asus_divider_line"
+            android:background="@color/asus_divider_area_color"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/asus_content_height1"
+        android:id="@+id/delete_network">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/asus_content_height1"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/asus_popup_content_margin_left_right"
+            android:textSize="15dp"
+            android:textColor="@color/preference_category_text_color"
+            android:text="@string/delete_network"/>
+        <View android:id="@+id/delete_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/asus_divider_line"
+            android:background="#d4d4d4"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/asus_content_height1"
+        android:id="@+id/ignore_network">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/asus_content_height1"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/asus_popup_content_margin_left_right"
+            android:textSize="@dimen/asus_content_main_size"
+            android:textColor="@color/preference_category_text_color"
+            android:text="@string/ignore_network"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/asus_divider_line"
+            android:background="@color/asus_divider_area_color"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>-->
+
+</LinearLayout>

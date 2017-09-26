@@ -1,0 +1,234 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/asus_content_bg_color">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/data_collection_area">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/term_titel_margin_top"
+            android:textSize="@dimen/welcome_title_size"
+            android:textColor="@color/asus_content_main_color"
+            android:fontFamily="droid-sans-fallback"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/data_collection_title"/>
+
+
+        <ScrollView
+            android:id="@+id/data_collection_eula_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/data_collection_scroll_margin_top"
+            android:layout_marginLeft="@dimen/welcome_content_margin_left_right"
+            android:layout_marginRight="@dimen/welcome_content_margin_left_right"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/data_collection_eula_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/data_collection_eula_msg"
+                    android:textSize="@dimen/ad_content_size"
+                    android:textColor="@color/asus_content_main_color"
+                    android:lineSpacingExtra="@dimen/data_collection_line_spacing"
+                    android:layout_weight="0.43">
+                </TextView>
+            </LinearLayout>
+        </ScrollView>
+
+
+        <RelativeLayout
+            android:id="@+id/data_collection_agreement_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/head_summary_margin_top"
+            android:visibility="visible">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/data_collection_agreement_checkbox"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/data_collection_agreement_tv"
+                    android:text="@string/data_collection_agreement_msg"
+                    android:fontFamily="sans-serif"
+                    android:layout_centerVertical="true"
+                    android:lineSpacingExtra="@dimen/data_collection_line_spacing"
+                    android:layout_marginLeft="@dimen/welcome_content_margin_img"
+                    android:textSize="@dimen/asus_content_summary_size"
+                    android:textColor="@color/asus_content_main_color">
+                </TextView>
+                <TextView
+                    android:id="@+id/operator_statement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/and_operator_statement"
+                    android:fontFamily="sans-serif"
+                    android:lineSpacingExtra="@dimen/data_collection_line_spacing"
+                    android:visibility="gone"
+                    android:layout_marginLeft="@dimen/welcome_content_margin_img"
+                    android:textSize="@dimen/asus_content_summary_size"
+                    android:textColor="@color/asus_content_main_color"/>
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/data_collection_agreement_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/welcome_content_margin_left_right"
+                android:background="@null"
+                style="@style/CustomCheckboxTheme">
+            </CheckBox>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/data_collection_area">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/term_second_margin_top"
+            android:textSize="@dimen/welcome_title_size"
+            android:textColor="@color/asus_content_main_color"
+            android:fontFamily="droid-sans-fallback"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/asus_intelligence_manager"/>
+
+
+        <ScrollView
+            android:id="@+id/asus_intelligence_manager_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/scrollview_height"
+            android:layout_marginTop="@dimen/data_collection_scroll_margin_top"
+            android:layout_marginLeft="@dimen/scroll_view_margin_left_right"
+            android:layout_marginRight="@dimen/scroll_view_margin_left_right"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/asus_intelligence_manager_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/asus_intelligence_manager_info"
+                    android:textSize="@dimen/ad_content_size"
+                    android:textColor="@color/asus_content_main_color"
+                    android:lineSpacingExtra="@dimen/data_collection_line_spacing"
+                    android:paddingRight="@dimen/scroll_view_content_padding"
+                    android:paddingLeft="@dimen/scroll_view_content_padding"
+                    android:layout_weight="0.43">
+                </TextView>
+            </LinearLayout>
+        </ScrollView>
+
+
+        <RelativeLayout
+            android:id="@+id/asus_intelligence_manager_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/welcome_img_margin_top"
+            android:visibility="visible">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/asus_intelligence_manager_checkbox"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/asus_intelligence_manager_tv"
+                    android:text="@string/asus_intelligence_manager_check"
+                    android:fontFamily="sans-serif"
+                    android:layout_centerVertical="true"
+                    android:lineSpacingExtra="@dimen/data_collection_line_spacing"
+                    android:layout_marginLeft="@dimen/welcome_content_margin_img"
+                    android:textSize="@dimen/asus_content_summary_size"
+                    android:textColor="@color/asus_content_main_color">
+                </TextView>
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/asus_intelligence_manager_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/welcome_content_margin_left_right"
+                android:background="@null"
+                style="@style/CustomCheckboxTheme">
+            </CheckBox>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <!--<Button
+        android:id="@+id/button_exit"
+        android:layout_width="@dimen/add_fingerprint_button_width"
+        android:layout_height="@dimen/add_fingerprint_button_height"
+        android:gravity="center"
+        android:text="@string/adactivity_exit"
+        android:background="@drawable/start_button_enable_bg"
+        android:textSize="@dimen/asus_content_main_size"
+        android:textColor="@color/text_color"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/start"/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/previous"
+            android:paddingLeft="@dimen/asus_content_margin_left_right"
+            style="@style/bottom_text" />
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/asus_content_margin_left_right"
+            android:text="@string/next"
+            style="@style/bottom_text"/>
+    </RelativeLayout>
+
+</RelativeLayout>

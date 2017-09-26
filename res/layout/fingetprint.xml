@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/head_height"
+        android:orientation="vertical"
+        android:background="@drawable/bg"
+        android:id="@+id/fingetprint">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/head_title_margin_top"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/fingerprint"
+            style="@style/head_title"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fingerprint_check_info"
+            android:layout_marginLeft="@dimen/select_network_summary_margin_left_right"
+            android:layout_marginRight="@dimen/select_network_summary_margin_left_right"
+            android:layout_marginTop="@dimen/head_summary_margin_top"
+            style="@style/head_summary"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:layout_marginTop="@dimen/icon_margin_top"
+        android:layout_below="@+id/fingetprint"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/fingerprint_complete"
+        android:id="@+id/icon"/>
+
+
+
+    <TextView
+        android:layout_width="@dimen/add_fingerprint_button_width"
+        android:layout_height="@dimen/add_fingerprint_button_height"
+        android:layout_marginBottom="@dimen/add_fingerprint_margin_bottom"
+        android:layout_centerHorizontal="true"
+        android:text="@string/add_fingerprint"
+        android:id="@+id/fingetprint_add"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/asus_content_main_size"
+        android:background="@drawable/button_bg"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/previous"
+            android:paddingLeft="@dimen/asus_content_margin_left_right"
+            style="@style/bottom_text"/>
+
+        <TextView
+            android:id="@+id/skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/asus_content_margin_left_right"
+            android:text="@string/skip"
+            android:layout_alignParentBottom="true"
+            style="@style/bottom_text"/>
+    </RelativeLayout>
+
+</RelativeLayout>

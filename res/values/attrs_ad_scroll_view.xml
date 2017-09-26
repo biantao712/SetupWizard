@@ -1,0 +1,8 @@
+<resources>
+    <declare-styleable name="AdScrollView">
+        <attr name="exampleScrollString" format="string" />
+        <attr name="exampleScrollDimension" format="dimension" />
+        <attr name="exampleScrollColor" format="color" />
+        <attr name="exampleScrollDrawable" format="color|reference" />
+    </declare-styleable>
+</resources>

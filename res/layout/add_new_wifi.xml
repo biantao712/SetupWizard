@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/asus_content_height1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/asus_content_height1"
+        android:layout_marginLeft="@dimen/asus_content_margin_left_right"
+        android:text="@string/add_wifi_network"
+        android:gravity="center_vertical"
+        android:textColor="@color/asus_content_main_color"
+        android:textSize="@dimen/asus_content_main_size"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/asusres_right_arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/asus_content_margin_left_right"
+        android:id="@+id/icon"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/asus_divider_line"
+        android:background="@color/asus_divider_area_color"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/asus_content_margin_left_right"/>
+
+</RelativeLayout>

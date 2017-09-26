@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+         xmlns:android="http://schemas.android.com/apk/res/android"
+         android:layout_height="wrap_content" 
+         android:layout_width="fill_parent">
+         <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+			 android:id="@+id/TopLayout"
+			android:layout_centerHorizontal="true"
+			 android:layout_height="wrap_content"
+			 android:layout_width="wrap_content">
+			 <ImageView
+				   android:id="@+id/ItemBGImage"
+				   android:layout_below="@+id/ItemImage"
+				   android:layout_height="58dp"
+				   android:layout_width="58dp"
+				   android:scaleType="centerInside"
+				   android:layout_marginTop="-58dp"
+				   android:src="@drawable/btn_wifi_animation"
+				   android:layout_centerHorizontal="true">
+			 </ImageView>
+			 <ImageView
+				   android:id="@+id/ItemImage"
+				   android:layout_height="58dp"
+				   android:layout_width="58dp"
+				   android:scaleType="centerInside"
+				   android:layout_marginTop="0dp"
+				   android:src="@drawable/wifi_signal"
+				   android:layout_centerHorizontal="true">
+			 </ImageView>
+		</RelativeLayout>
+		<TextView
+		   android:id="@+id/ItemText"
+		   android:layout_width="wrap_content"
+		   android:layout_below="@+id/TopLayout"
+		   android:layout_height="wrap_content"
+		   android:gravity="center"
+		   android:layout_centerHorizontal="true">
+		</TextView>
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/popup_window_drawable">
+
+    <TextView
+        android:layout_width="@dimen/popup_width"
+        android:layout_height="@dimen/asus_pupop_title_height"
+        android:textSize="@dimen/asus_actionbar_main_text_size"
+        android:textColor="@color/asus_content_main_color"
+        android:gravity="center"
+        android:id="@+id/title"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/asus_divider_line"
+        android:background="@color/asus_bar_divider_line_color"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/asus_choice_list_divider_color"
+        android:dividerHeight="@dimen/asus_divider_line"
+        android:id="@+id/choice_list" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/asus_divider_line"
+        android:background="@color/asus_bar_divider_line_color"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/asus_pupop_title_height"
+        android:textSize="@dimen/asus_actionbar_main_text_size"
+        android:textColor="@color/asus_content_main_color"
+        android:gravity="center"
+        android:id="@+id/cancel"
+        android:text="@string/wifi_cancel"/>
+
+
+
+</LinearLayout>

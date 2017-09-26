@@ -1,0 +1,111 @@
+<!--RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/background_color">
+
+    <RelativeLayout
+			android:layout_width="match_parent"
+			android:background="@color/theme_color"
+			android:gravity="center"
+			android:layout_marginTop="0dp"
+			android:layout_height="60dp">    
+		<TextView 
+			android:id="@+id/wifi_setting_title"
+			android:layout_marginTop="25dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:minHeight="@dimen/welcome_textview_height"
+			android:gravity="center"
+			android:text="@string/network_connect"
+			style="@style/ad_title_text"/>
+	</RelativeLayout>
+	
+	<RelativeLayout
+			android:layout_width="match_parent"
+			android:background="@color/theme_color"
+			android:gravity="center"
+			android:layout_marginTop="0dp"
+			android:layout_height="2dp"> 
+		<View
+			style="@style/divider_2dp_height_transparent"
+			android:gravity="center"
+			android:layout_centerHorizontal="true"
+			android:layout_marginLeft="@dimen/content_padding"
+			android:layout_marginRight="@dimen/content_padding"
+			android:background="@drawable/dividingline" />	
+	</RelativeLayout>
+    
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/background_color"
+        android:orientation="vertical" />
+    
+</RelativeLayout-->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context="com.asus.cnsetupwizard.wifi.WifiSettingsActivity">
+
+    <LinearLayout
+        android:id="@+id/wifi_settings_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/area_1"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_height="@dimen/head_height">
+            <TextView
+                android:id="@+id/wifi_setting_title"
+                android:layout_marginTop="@dimen/head_title_margin_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/network_connect"
+                android:layout_gravity="center_horizontal"
+                style="@style/head_title"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cellular_tips"
+                android:layout_marginLeft="@dimen/select_network_summary_margin_left_right"
+                android:layout_marginRight="@dimen/select_network_summary_margin_left_right"
+                android:layout_marginTop="@dimen/head_summary_margin_top"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                style="@style/head_summary"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/area_2"
+            android:layout_width="match_parent"
+            android:background="@color/theme_color"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_below="@+id/area_1">
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/background_color"
+                android:orientation="vertical" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

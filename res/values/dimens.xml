@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+  -->
+<resources>
+    <!-- Action bar -->
+    <dimen name="action_bar_height">48dip</dimen>
+    <dimen name="action_bar_title_text_size">32.0dip</dimen>
+    <dimen name="action_bar_switch_margin_end">16.0dip</dimen>
+
+    <dimen name="content_padding">13.0dip</dimen>
+    <dimen name="content_text_size">18.0dip</dimen>
+    <dimen name="content_text_padding">5.0dip</dimen>
+    <dimen name="sub_content_text_size">15.0dip</dimen>
+    <dimen name="category_bar_text_size">16.0dip</dimen>
+    <dimen name="button_text_size">16.0dip</dimen>
+
+    <dimen name="list_view_item_height_one_line">49.0dip</dimen>
+    <dimen name="list_view_item_height_two_lines">59.0dip</dimen>
+    <dimen name="list_view_item_height_three_lines">80.0dip</dimen>
+    <dimen name="preference_category_height">40.0dip</dimen>
+
+    <!-- The height for the single radio group item.-->
+    <dimen name="radio_button_margin_right">13.0dip</dimen>
+    <dimen name="radio_button_text_padding_left">18.0dip</dimen>
+
+    <!-- The minimum button width, used for previous, next, emergency, and finish buttons -->
+    <dimen name="button_min_width">46.0dip</dimen>
+
+    <!-- List view divider height -->
+    <dimen name="list_view_divider_height">1.0dip</dimen>
+
+    <!-- Welcome page -->
+    <dimen name="welcome_content_container_height">413dip</dimen>
+    <dimen name="welcome_content_container_padding_top">25dip</dimen>
+    <dimen name="welcome_textview_height">82dip</dimen>
+    <dimen name="welcome_text_size">55.0sp</dimen>
+    <dimen name="welcome_text_size2">22.0sp</dimen>
+    <dimen name="welcome_content_size2">15sp</dimen>
+
+    <dimen name="locale_picker_item_text_size">22sp</dimen>
+    <dimen name="locale_picker_popup_window_height_diff">1.0dip</dimen>
+    <dimen name="locale_picker_popup_window_width">250.0dip</dimen>
+    <dimen name="locale_picker_margin_bottom">3.0dip</dimen>
+
+    <!-- The paddings that is used when the central welcome message is single-line. -->
+    <dimen name="welcome_message_area_padding_top_1">23.0dip</dimen>
+    <dimen name="welcome_message_area_padding_bottom_1">30.0dip</dimen>
+
+    <!-- The paddings that is used when the central welcome message is two-line. -->
+    <dimen name="welcome_message_area_padding_top_2">6.0dip</dimen>
+    <dimen name="welcome_message_area_padding_bottom_2">6.0dip</dimen>
+
+    <dimen name="locale_picker_width">238.0dip</dimen>
+    <dimen name="locale_picker_min_height">50.0dip</dimen>
+    <dimen name="locale_picker_text_padding_left">12.0dip</dimen>
+    <dimen name="locale_picker_text_padding_right">28.0dip</dimen>
+    <dimen name="locale_picker_padding_bottom">11.0dip</dimen>
+
+    <dimen name="bottom_menu_view_height">97.0dip</dimen>
+    <dimen name="bottom_menu_view_padding_left">22.0dip</dimen>
+    <dimen name="bottom_menu_view_padding_right">22.0dip</dimen>
+
+    <!-- The padding and margin used for the page indicator -->
+    <dimen name="page_indicator_container_padding_left">10.0dip</dimen>
+    <dimen name="page_indicator_container_padding_right">10.0dip</dimen>
+
+    <!-- The text size for emergency call -->
+    <dimen name="emergency_call_text_size">14.0dip</dimen>
+
+    <!-- The right magin for the wifi signal -->
+    <dimen name="wifi_signal_right_margin">8.0dip</dimen>
+    <dimen name="wifi_connected_image_margin_right">10.0dip</dimen>
+
+    <!-- The text size of the title and summary in common preference,
+    such as wifi-setting, setup_account, set_date_time -->
+    <dimen name="preference_middle_padding">30.0dip</dimen>
+
+    <!-- Input method -->
+    <dimen name="ims_margin_between_number_anchor">9.0dip</dimen>
+    <dimen name="number_of_selected_text_size">21.0dip</dimen>
+    <dimen name="ims_content_text_size">18sp</dimen>
+    <dimen name="ims_item_text_margin_left">12dp</dimen>
+    <dimen name="ims_item_height">50dp</dimen>
+
+    <dimen name="provider_icon_right_margin">10.0dip</dimen>
+
+    <!--Used fot the central button in the complete page  -->
+    <dimen name="finish_button_bottom_margin">59.0dip</dimen>
+    <dimen name="finish_button_width">196.0dip</dimen>
+
+    <!-- Data collection -->
+    <dimen name="data_collection_eula_scrollview_height">215.0dip</dimen>
+    <dimen name="data_collection_eula_scrollview_margin_top">10.0dip</dimen>
+    <dimen name="data_collection_eula_scrollview_text_padding_left">5.0dip</dimen>
+    <dimen name="data_collection_eula_scrollview_text_padding_right">5.0dip</dimen>
+    <dimen name="data_collection_eula_scrollview_text_padding_top">5.0dip</dimen>
+    <dimen name="data_collection_widget_margin_left">8.0dip</dimen>
+    <dimen name="data_collection_radiobtn_text_padding">10.0dip</dimen>
+    <dimen name="data_collection_radionbtn_padding">20.0dip</dimen>
+    <dimen name="data_collection_line_spacing">3.0dip</dimen>
+    <dimen name="data_collection_agreement_container_minHeight">50.0dip</dimen>
+    <dimen name="data_collection_divider_margin_bottom">13.0dip</dimen>
+    <dimen name="data_collect_agreement_text_size">15.0dip</dimen>
+    <dimen name="data_collection_content_text_size">15.0dip</dimen>
+
+    <!-- Accounts and sync -->
+    <dimen name="account_sync_divider_margin_bottom">22.0dip</dimen>
+    <dimen name="account_sync_list_margin_top">38.0dip</dimen>
+
+    <!-- Data Connection-->
+    <dimen name="data_connection_content_text_line_spacing">8.0dip</dimen>
+
+    <!-- Setup Complete-->
+    <dimen name="complete_content_padding">0.0dip</dimen>
+    <dimen name="complete_text_margin">0.0dip</dimen>
+    <dimen name="complete_content_text_size">18.0dip</dimen>
+
+    <dimen name="moveaction_top_padding">10.0dip</dimen>
+
+    <!-- Asus Account -->
+    <dimen name="list_item_dashbar_text_line_spacing">0.0dip</dimen>
+    <dimen name="list_item_dashbar_margin_top">10.0dip</dimen>
+    <dimen name="list_item_dashbar_margin_right">6.0dip</dimen>
+    <dimen name="asus_account_content_text_margin_horizontal">16.0dip</dimen>
+    <dimen name="asus_account_content_text_margin_top">15.0dip</dimen>
+    <dimen name="asus_account_content_text_margin_bottom">10.0dip</dimen>
+    <dimen name="asus_account_button_margin_horizontal">14.0dip</dimen>
+    <dimen name="asus_account_button_margin_bottom">0.0dip</dimen>
+    <dimen name="asus_account_button_margin_between_buttons">10.0dip</dimen>
+
+
+    <!-- Data Transfer -->
+    <dimen name="data_transfer_content_text_line_spacing">8.0dip</dimen>
+    <dimen name="data_transfer_top_margin">20dip</dimen>
+    <dimen name="data_transfer_bottom_margin">20dip</dimen>
+    <dimen name="data_transfer_border_spacing">16.0dip</dimen>
+    <dimen name="data_transfer_prefs_height">50.0dip</dimen>
+
+    <!-- Preference Text Size -->
+    <dimen name="preference_title_text_size">18sp</dimen>
+    <dimen name="preference_summary_text_size">17sp</dimen>
+    <dimen name="preference_category_title_size">18.0sp</dimen>
+    <dimen name="account_fragment_content_size">15.0sp</dimen>
+    <dimen name="welcome_locale_picker_text_size">18.0sp</dimen>
+
+    <dimen name="preference_list_item_height">50dip</dimen>
+    <dimen name="wifi_setting_item_left_margin">8dip</dimen>
+
+    <dimen name="preference_category_top_padding">35dip</dimen>
+    <dimen name="preference_category_bottom_padding">8dip</dimen>
+    <dimen name="preference_category_left_padding">12dip</dimen>
+    <dimen name="preference_category_right_padding">18dip</dimen>
+
+    <dimen name="preference_category_sync_data_bottom_padding">23dip</dimen>
+    <dimen name="preference_category_auto_sync_top_padding">18dip</dimen>
+    <dimen name="preference_category_auto_sync_title_left_margin">11dip</dimen>
+    <dimen name="preference_category_auto_sync_title_text_size">18sp</dimen>
+
+    <dimen name="preference_account_left_padding">18dip</dimen>
+    <dimen name="preference_account_title_left_padding">11dip</dimen>
+    <dimen name="preference_account_height">60dip</dimen>
+
+    <dimen name="data_connection_content_top_padding">18dip</dimen>
+    <dimen name="data_connection_content_bottom_padding">13dip</dimen>
+    <dimen name="zone_picker_listview_top_margin">27dip</dimen>
+
+    <dimen name="date_time_image_bottom_margin">18dip</dimen>
+    <dimen name="asus_account_scrollview_height">174.0dip</dimen>
+    <dimen name="asus_account_msg_title_bottom_margin">13.0dip</dimen>
+    <dimen name="asus_account_button_text_size">15.0sp</dimen>
+
+    <dimen name="restore_select_popup_item_height">20.0dip</dimen>
+    <dimen name="restore_select_text_size">15sp</dimen>
+    <dimen name="restore_select_image_margin_bottom">19.0dip</dimen>
+    <dimen name="restore_select_description_textview_height">80.0dip</dimen>
+    <dimen name="restore_select_hint_margin_bottom">8.0dip</dimen>
+
+    <dimen name="restore_process_img_margin_top">120.0dip</dimen>
+    <dimen name="restore_process_img_margin_bottom">25.0dip</dimen>
+    <dimen name="restore_process_text_size">18sp</dimen>
+
+    <dimen name="preference_title_text_size_dataconnection">16sp</dimen>
+
+    <dimen name="google_drive_description_text_size">18sp</dimen>
+    <dimen name="google_drive_img_margin_top">27dp</dimen>
+    <dimen name="google_drive_text_margin_top">60dp</dimen>
+
+    <dimen name="google_drive_button_text_size">15sp</dimen>
+    <dimen name="google_drive_button_width">304dp</dimen>
+
+    <dimen name="google_drive_content_text_margin_horizontal">16.0dip</dimen>
+
+    <dimen name="datetime_preference_text_content_size">18sp</dimen>
+    <dimen name="datetime_preference_text_summary_size">15sp</dimen>
+
+    <!-- Button, spinner and textfield widget inset -->
+    <dimen name="asus_widget_inset_top">5dp</dimen>
+    <dimen name="asus_widget_inset_right">5dp</dimen>
+    <dimen name="asus_widget_inset_bottom">5dp</dimen>
+    <dimen name="asus_widget_inset_left">5dp</dimen>
+
+    <!-- Button text size -->
+    <dimen name="asus_button_text_size">15sp</dimen>
+    <dimen name="google_drive_description_text_margin_horizontal">16dip</dimen>
+
+    <dimen name="phone_protect_edit_margin_top">25dip</dimen>
+
+    <dimen name="phone_protect_image_top_margin">10dip</dimen>
+    <dimen name="phone_protect_image_bottom_margin">5dip</dimen>
+    <dimen name="phone_protect_button_bottom_margin">4dip</dimen>
+    <dimen name="phone_protect_content_text_margin_horizontal">12dip</dimen>
+    <dimen name="phone_protect_content_textview_margin_bottom">27dip</dimen>
+    <dimen name="phone_protect_button_width">304dip</dimen>
+    <dimen name="phone_protect_description_text_size">15dip</dimen>
+    <dimen name="phone_protect_textview_top_margin">15dip</dimen>
+    <dimen name="phone_protect_textview_left_margin">15dip</dimen>
+    <dimen name="phone_protect_content_botton_margin">5dip</dimen>
+    <dimen name="phone_verify_margin_left">35dip</dimen>
+    <dimen name="phone_verify_margin_top">15dip</dimen>
+    <dimen name="phone_verify_content_margin_top">50dip</dimen>
+
+    <dimen name="asus_bottom_bar_height">40dp</dimen>
+    <dimen name="asus_content_margin_left_right">14dp</dimen>
+    <dimen name="asus_content_height1">48dp</dimen>
+    <dimen name="asus_content_height2">58dp</dimen>
+    <dimen name="asus_divider_area_height">20dp</dimen>
+    <dimen name="asus_divider_line">1px</dimen>
+    <dimen name="asus_content_main_size">15sp</dimen>
+    <dimen name="asus_content_summary_size">12sp</dimen>
+    <dimen name="asus_content_margin_top">13dp</dimen>
+    <dimen name="asus_ationbar_height">40dp</dimen>
+    <dimen name="asus_actionbar_margin">10dp</dimen>
+    <dimen name="asus_actionbar_content_margin">6dp</dimen>
+    <dimen name="asus_actionbar_main_text_size">16sp</dimen>
+    <dimen name="asus_content_head_height">34dp</dimen>
+    <dimen name="asus_pupop_title_height">56dp</dimen>
+    <dimen name="asus_popup_content_margin_left_right">16dp</dimen>
+    <dimen name="asus_fingerprint_find_sensor_content_back_w">312dp</dimen>
+    <dimen name="asus_fingerprint_find_sensor_content_back_h">268dp</dimen>
+    <dimen name="asus_fingerprint_find_sensor_content_front_w">312dp</dimen>
+    <dimen name="asus_fingerprint_find_sensor_content_front_h">303.5dp</dimen>
+    <dimen name="asus_fingerprint_enrolling_continue_btn_inside_radius">82.335dp</dimen>
+    <dimen name="asus_fingerprint_enrolling_continue_btn_outside_radius">100.335dp</dimen>
+    <dimen name="fingerprint_error_text_appear_distance">16dp</dimen>
+    <dimen name="fingerprint_error_text_disappear_distance">-8dp</dimen>
+    <dimen name="fingerprint_title_margin_top">70dp</dimen>
+    <dimen name="fingerprint_summary_margin_top">40dp</dimen>
+    <dimen name="fingerprint_img_margin_top">40dp</dimen>
+    <dimen name="fingerprint_img_width">140dp</dimen>
+    <dimen name="fingerprint_img_height">200dp</dimen>
+    <dimen name="fingerprint_title_size">20sp</dimen>
+    <dimen name="fingerprint_img_margin_title_top">105dp</dimen>
+    <dimen name="lock_title_margin_top">93dp</dimen>
+    <dimen name="lock_edit_margin_top">30dp</dimen>
+    <dimen name="lock_summary_margin_top">14dp</dimen>
+    <dimen name="lock_button_margin_top">40dp</dimen>
+    <dimen name="password_edit_margin_left_right">20dp</dimen>
+    <dimen name="password_edit_height">32dp</dimen>
+    <dimen name="lock_button_height">40dp</dimen>
+    <dimen name="lock_button_width">100dp</dimen>
+    <dimen name="lock_button_margin_left_right">50dp</dimen>
+    <dimen name="pattern_title_margin_top">70dp</dimen>
+    <dimen name="pattern_img_margin_top">20dp</dimen>
+    <dimen name="pattern_button_margin_top">10dp</dimen>
+    <dimen name="popup_width">332dp</dimen>
+    <dimen name="welcome_title_margin_top">93dp</dimen>
+    <dimen name="welcome_img_margin_top">20dp</dimen>
+    <dimen name="welcome_content_margin_top">72dp</dimen>
+    <dimen name="welcome_content_margin_left_right">46dp</dimen>
+    <dimen name="welcome_content_margin_img">10dp</dimen>
+    <dimen name="welcome_title_size">20sp</dimen>
+    <dimen name="welcome_content_size">15sp</dimen>
+    <dimen name="welcome_bg_height">410dp</dimen>
+    <dimen name="text_line_spacing">7dp</dimen>
+    <dimen name="content_margin_top">14dp</dimen>
+    <dimen name="welcome_area2_margin_top">39dp</dimen>
+    <dimen name="text_margin_bottom">13dp</dimen>
+    <dimen name="head_height">158dp</dimen>
+    <dimen name="head_title_margin_top">52dp</dimen>
+    <dimen name="head_summary_margin_top">15dp</dimen>
+    <dimen name="icon_size">100dp</dimen>
+    <dimen name="icon_margin_top">112dp</dimen>
+    <dimen name="select_network_summary_margin_left_right">38dp</dimen>
+    <dimen name="add_fingerprint_margin_bottom">80dp</dimen>
+    <dimen name="add_fingerprint_button_height">40dp</dimen>
+    <dimen name="add_fingerprint_button_width">300dp</dimen>
+    <dimen name="data_collection_title_margin_top">45dp</dimen>
+    <dimen name="data_collection_scroll_margin_top">20dp</dimen>
+    <dimen name="start">81dp</dimen>
+    <dimen name="welcome_point_icon_size">9dp</dimen>
+    <dimen name="alertdialog_height">280dp</dimen>
+    <dimen name="ad_content_size">14sp</dimen>
+    <dimen name="scrollview_height">185dp</dimen>
+    <dimen name="logo_margin_top">146dp</dimen>
+    <dimen name="margin_logo">25dp</dimen>
+    <dimen name="logo_text_size">24sp</dimen>
+    <dimen name="term_titel_margin_top">67dp</dimen>
+    <dimen name="term_second_margin_top">60dp</dimen>
+    <dimen name="scroll_view_margin_left_right">44dp</dimen>
+    <dimen name="scroll_view_content_padding">2dp</dimen>
+</resources>

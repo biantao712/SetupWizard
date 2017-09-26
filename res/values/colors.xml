@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+    <color name="theme_color">#03bed4</color>
+    <!-- <color name="divider_color">#8295b1</color> -->
+    <color name="divider_color">#d2d2d2</color>
+
+    <color name="welcome_button_text_color">#4d4d4d</color>
+    <color name="welcome_text_color1">#a3adbc</color>
+    <color name="welcome_text_color2">#8794a7</color>
+    <color name="welcome_text_color3">#6b7c93</color>
+
+    <color name="hyperlink_text_color_pressed">#2B6688</color>
+    <color name="hyperlink_text_color_normal">#206080</color>
+
+   <!--  <color name="background_color">#627188</color> -->
+  <!--  <color name="category_bar_color">#bfd3f2</color>
+   <color name="sub_content_text_color">#bfd3f2</color> -->
+   
+    <color name="background_color">#ffffff</color>
+    <color name="category_bar_color">#acb7c6</color>
+    <color name="sub_content_text_color">#acb7c6</color>
+
+    <!-- <color name="eula_scrollview_background_color">#4c5460</color>
+    <color name="data_collection_eula_text_color">#acb7c6</color> -->    
+    <color name="eula_scrollview_background_color">#545c68</color>
+    <color name="data_collection_eula_text_color">#ced6e1</color>
+    
+    
+    <color name="button_text_color">#131313</color>
+
+    <color name="press_state_bg_color">#59677d</color>
+    <!-- <color name="datetime_preference_disabled_color">#8395b0</color> -->
+    <color name="datetime_preference_disabled_color">#606a7a</color>
+    <!-- <color name="list_item_focus_bg_color">#7c899d</color> -->
+    <color name="list_item_focus_bg_color">#545d6b</color>
+    
+    <!-- <color name="button_ok_bg_normal">#434a55</color> -->
+    <color name="button_ok_bg_normal">#6D85A5</color>
+    <!-- <color name="button_ok_bg_pressed">#434a55</color> -->
+    <color name="button_ok_bg_pressed">#455971</color>
+    
+    <!-- welcome background color -->
+    <!-- welcome bottommenu background color -->
+    <color name="welcome_bottommenu_background_color">#00d3cc</color>
+    <color name="bottommenu_background_color">#ffffff</color>
+    
+    <!-- L change -->
+    <color name="preference_category_text_color">#505050</color>
+    <color name="preference_title_color">#000000</color>
+    <color name="preference_summary_color">#ffffff</color>
+    <color name="preference_summary_color_4">#868686</color>
+    
+    <color name="account_content_text_color">#323232</color>
+    <color name="account_button_text_color">#00bcd6</color>
+    
+    <color name="restore_select_hint_text_color">#9c9c9c</color>
+    
+    <color name="preference_title_dataconnection_warning_color">#616161</color>
+    
+    <color name="google_drive_description_text_color">#616161</color>
+    <color name="google_drive_button_text_color">#ffffff</color>
+    
+    <color name="asus_ripple_material_light">#30000000</color>
+    <color name="asus_button_bg_light_disabled">#00d3cc</color>
+    <color name="asus_button_text_color">#ffffff</color>
+    <color name="asus_button_text_color_disabled">#8b8b8b</color>
+    
+    <color name="phone_protect_description_text_color">#323232</color>
+
+    <color name="asus_action_bottom_bar_color">#f0f0f0</color>
+    <color name="asus_content_bg_color">#f7f7f7</color>
+    <color name="asus_divider_area_color">#eaeaea</color>
+    <color name="asus_content_main_color">#0c0c0c</color>
+    <color name="asus_content_summary_color">#9e9e9e</color>
+    <color name="asus_bar_divider_line_color">#c9c9c9</color>
+    <color name="asus_choice_list_divider_color">#d4d4d4</color>
+    <color name="asus_fingerprint_progress_finish">#58d22d</color>
+    <color name="button_enable_color">#0c0c0c</color>
+    <color name="button_disable_color">#dadada</color>
+    <color name="pattern_error_color">#e41000</color>
+    <color name="text_color">#03bed4</color>
+    <color name="lock_pattern_view_regular_color">#ff37474f</color>
+    <color name="lock_pattern_view_success_color">#ff3367d6</color>
+    <color name="lock_pattern_view_error_color">#ff5621</color>
+</resources>

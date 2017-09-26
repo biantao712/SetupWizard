@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <!-- Willie_Huang, 2012/07/10, UI required, new feature -->
+    <string name="welcome_title" description="Title text." maxwidth="-1">选择语言</string>
+    <string name="inputmethod_title" description="Title text." maxwidth="-1">输入法</string>
+    <string name="select_wifi_title" description="Title text." maxwidth="-1">通过移动网络连接</string>
+    <string name="select_wifi_title_no_phone" description="Title text." maxwidth="-1">请选择您需要的WLAN连接</string>
+    <!-- <string name="setup_account_title" description="Title text." maxwidth="-1">设置帐户</string> -->
+    <string name="data_sync_title" description="Title text." maxwidth="-1">数据同步</string>
+    <string name="google_location_title" description="Title text." maxwidth="-1">位置服务</string>
+    <string name="date_time_title" description="Title text." maxwidth="-1">设置日期和时间</string>
+    <string name="complete_title" description="Title text." maxwidth="-1">设置完毕</string>
+
+    <string name="sync_msg" description="Text for introducing the function of synchronization." maxwidth="-1">同步电子邮件、联系人、日历、天气服务、以及其他服务。</string>
+    <string name="radio_auto_sync_msg" description="Message of a radio button." maxwidth="-1">自动同步数据</string>
+    <string name="radio_manual_sync_msg" description="Message of a radio button." maxwidth="-1">手动同步数据</string>
+
+    <string name="setup_google_account_msg" description="Text for describing setup Google account." maxwidth="-1">设置您的 Google 帐户，以便备份和恢复您的用户数据；访问电子邮件和社交网络；下载新內容到您的设备。</string>
+    <string name="setup_accounts_msg" description="Text for describing account setup." maxwidth="-1">设置您的帐户，以便访问电子邮件和社交网络；下载新內容到您的设备。</string>
+    <string name="google_login_msg" dscription="Summary of list for Google account login." maxwidth="-1">登录现有或新的 Google 帐户。</string>
+
+    <string name="google_location_msg" description="Text for describing Google location setup." maxwidth="-1">Google 位置服务使用 WLAN 网络等来源的数据帮助应用程序确定您的大致位置，甚至 GPS 不可用时也可以定位。\n\n您可以随时在<i>设置</i>中更改这些选项。</string>
+    <string name="allow_network_msg" description="Message of a check-box for allowing network." maxwidth="-1">允许 Google 位置服务收集匿名位置数据。 一些数据可能存储在您的设备中。 收集在应用程序未运行时也可能发生。</string>
+    <string name="use_location_msg" description="Message of a check-box for using location services." maxwidth="-1">将我的位置用于 Google 搜索结果和其他 Google 服务。</string>
+
+    <string name="complete_msg" description="Text for describing complete setup." maxwidth="-1">您的设备已设置完毕，可以使用了。\n以后您可以在设置中更改所有项目。\n\n您可以随时从应用程序页面返回设置向导。</string>
+
+    <string name="btn_next_text" description="Text of next button." maxwidth="8">下一步</string>
+    <string name="btn_prev_text" description="Text of previous button." maxwidth="8">上一步</string>
+    <string name="btn_finish_text" description="Text of finish button." maxwidth="8">完成</string>
+    <string name="btn_back_text" description="Text of back button." maxwidth="8">返回</string>
+
+    <!-- Steven_Chao, 2013/05/27, UI required, new feature -->
+    <string name="btn_emer_text" description="Text of emergency call button." maxwidth="8">紧急呼救</string>
+
+    <!-- Date & time setting screen setting option summary text when Automatic time zone check box is selected (that is, when date and time should be determined automatically) [CHAR LIMIT=100] -->
+    <string name="asus_zone_auto_summaryOn" description="checkbox to enable/disable automatic time zone" maxwidth="-1">自动与移动网络服务提供商同步时间</string>
+
+    <!-- Date & time setting screen setting option summary text when Automatic time zone check box is clear [CHAR LIMIT=100] -->
+    <string name="asus_zone_auto_summaryOff" description="checkbox to enable/disable automatic time zone" maxwidth="-1">自动与移动网络服务提供商同步时间</string>
+
+    <string name="wifi_disable_network_notification_togglebox" description="Checkbox in WifiDialog for user to choose to disable the network notification of this AP or not." maxWidth="-1">禁用网络通知</string>
+    <string name="wifi_notification_disabled_first_item" description="This message will be shown in AP list if this AP's network notification is disabled." maxWidth="-1">通知已禁用</string>
+
+    <string name="asus_keyboard_subtype_limit" description="Max. number of selected keybaord reached" width="-1">已达可选择键盘的最大数量</string>
+    <string name="asus_keyboard_subtype_min_constraint" description="Min. number of selected keybaord reached" maxwidth="">请选择至少一种输入法</string>
+
+    <string name="data_connection_title" description="Text for choosing the connection type" maxwidth="-1">网络连接</string>
+    <string name="data_connection_msg" description="Text for introducing the function of data connection page" maxwidth="-1">通过手机网络或 WLAN创建网络连接。</string>
+    <string name="radio_mobile_and_wifi_msg" description="Text for radio button" maxwidth="-1">移动网络与 WLAN</string>
+    <string name="radio_only_wifi_msg" description="Text for radio button." maxwidth="-1">仅 WLAN连接</string>
+    
+    <!-- Heaven_Ye, 2014/01/17,UI required-->
+    <string name="setup_account_title" description="Title for setup account." maxwidth="">帐户&amp;同步</string>
+	<string name="setup_account_auto_sync_category_title" description="Category title text for the function of synchronization." maxwidth="">同步数据</string>
+	<string name="setup_account_auto_sync_description_msg" description="Text for introducing the function of synchronization." maxwidth="">自动在后台同步用户数据</string>
+	<string name="setup_account_auto_sync_checkbox_msg" description="Message of a check-box for allowing synchronization." maxwidth="">自动同步</string>
+	<string name="data_collection_yes_msg" maxwidth="">是，我同意。</string>
+	<string name="data_collection_no_msg" maxwidth="">不，谢谢。</string>
+	<string name="asus_account_title" description="Title for asus account." maxwidth="">ASUS 帐户</string>
+	<string name="asus_account_msg_title" description="Text for asus account content title." maxwidth="">创建 ASUS 帐户后，您可以: </string>
+	<string name="asus_account_msg_content_1" description="Text for asus account content 1st." maxwidth="">获得个人 ASUS 支持服务并延长所注册产品的保修。</string>
+	<string name="asus_account_msg_content_2" description="Text for asus account content 2nd." maxwidth="">获得免费 5GB 云存储空间。</string>
+	<string name="asus_account_msg_content_3" description="Text for asus account content 3rd." maxwidth="">获得热门优惠活动、促销信息以及最新的华硕资讯。</string>
+	<string name="asus_account_create_button" description="Text for create asus account button." maxwidth="">新创建</string>
+	<string name="asus_account_signin_button" description="Text for signin asus account button." maxwidth="">登录</string>
+	
+	 <!-- Heaven_Ye, 2014/02/24,UI required-->
+    <string name="sync_mode_preference_title">Sync data</string>
+    <string name="accounts_preference_title">帐户</string>
+    
+     <!-- Heaven_Ye, 2014/08/07,for data transfer  dialog-->    
+    <string name="data_transfer_title"  description="the title of data transfer page" maxwidth="-1">\u8d44\u6599\u8f6c\u79fb\u5de5\u5177</string>
+    <string name="data_transfer_description" description="the description of data transfer page" maxwidth="-1" >\u901a\u8fc7\u8d44\u6599\u8f6c\u79fb\u529f\u80fd\uff0c\u5c06\u60a8\u7684\u65e7\u8bbe\u5907\u4e0a\u7684\u4e2a\u4eba\u8d44\u6599\uff08\u5982\uff1a\u8054\u7cfb\u4eba\u3001\u65e5\u5386\u3001\u77ed\u4fe1\u3001\u4e66\u7b7e\u7b49\uff09\uff0c\u4f20\u8f93\u5230\u6b64\u8bbe\u5907\uff0c\u4ee5\u5b8c\u6210\u60a8\u7684\u4e2a\u6027\u5316\u8bbe\u7f6e\u3002</string>
+	<string name="data_transfer_option_yes" description="the option value for allowing data transfer" maxwidth="-1">\u4ece\u65e7\u8bbe\u5907\u4f20\u8f93\u8d44\u6599</string>
+	<string name="data_transfer_option_no" description="the option value for allowing data transfer" maxwidth="-1">\u8df3\u8fc7\u8d44\u6599\u8f6c\u79fb</string>
+
+	<string name="data_collection_participate_msg">我愿意参加此计划并发送匿名使用数据给ASUS，以帮助改进产品和服务。 我理解为了提供更好的服务，图库、文件管理器、音乐、以及联系人等需要访问Internet。</string>
+	<string name="data_connection_warning" maxwidth="-1"> *若启用移动数据连接，运营商有可能会收取额外费用。</string>
+	<string name="google_drive_button_text">享受此优惠</string>
+	<string name="google_drive_description_text" maxwidth="-1">您有资格获取100 GB的Google Drive免费存储空间。 转到此链接启动Google Drive，享受此优惠。</string>
+	<string name="google_drive_title">Google Drive促销</string>
+	<string name="restore_delay_text">加载...</string>
+	<string name="restore_process_text">恢复中...</string>
+	<string name="restore_select_button_text">设为新设备</string>
+	<string name="restore_select_description">通过从另一个设备的Google备份进行恢复来设置您的新设备</string>
+	<string name="restore_select_hint">从此备份进行恢复:</string>
+	<string name="restore_select_title">获取您的应用程序数据</string>
+	
+	<string name="wifi_confirm_dialog_button_cancel">\u53d6\u6d88</string>
+	<string name="wifi_confirm_dialog_button_skip">\u8df3\u8fc7\u5e10\u53f7\u767b\u5f55</string>
+	<string name="wifi_confirm_dialog_content">\u5982\u679c\u4e0d\u767b\u5f55 Google \u5e10\u53f7\uff0c\u60a8\u5c06\u65e0\u6cd5\u8fd8\u539f\u4ece Play Store \u4e0b\u8f7d\u7684\u5e94\u7528\u7a0b\u5e8f\u3002\u82e5\u60a8\u60f3\u8981\u767b\u5f55 Google \u5e10\u53f7\uff0c\u8bf7\u68c0\u67e5\u60a8\u7684\u7f51\u7edc\u8fde\u63a5\u3002</string>
+	<string name="wifi_confirm_dialog_title">\u8df3\u8fc7 Google \u5e10\u53f7\u767b\u5f55\uff1f</string>
+	
+<!-- string -->
+    <string name="setup_wizard_title" description="Title text of this activity." maxwidth="-1">设置向导</string>
+    <string name="welcome_message" description="Welcome message" maxwidth="-1">欢迎</string>
+    <string name="welcome_title02" description="Welcome Title" maxwidth="-1">省事儿云桌面</string>
+    <string name="welcome_content01" description="Welcome Content" maxwidth="-1">\"赚+\"大升级 : 玩手机赚Zen币 , 流量包轻松兑 , 畅享吃喝住行</string>
+    <string name="welcome_content02" description="Welcome Content" maxwidth="-1">\"短信+\" : 短信APP化 , 自动分类关键信息生成卡片 , 话费充值 , 航班动态 , 火车时刻等服务一键搞定</string>
+    <string name="welcome_content03" description="Welcome Content" maxwidth="-1">\"备份+\" : 跨越时间和空间的限制 , 实现桌面布局、应用、联系人等全克隆</string>
+	<string name="network_connect">选择网络</string>
+	<string name="cellular_tips">使用移动数据访问网络可能产生流量费 , 费用由运营商收取</string>
+	<string name="cellular_tips_no_phone">启动连接获得更多互联网服务</string>
+	<string name="cellular_tips_no_sim">未插入SIM卡，当前状态手机无法使用数据网络</string>
+    <string name="wifi_add_network" msgid="6234851776910938957">"WLAN 连接"</string>
+    <string name="data_collection_title" description="Title for data collection" maxwidth="-1">协议与条款</string>
+    <string name="data_collection_eula_msg" description="EULA message for data collection" maxwidth="-1">为了向我们的客户提供更好的服务 , 我们可能会收集您的使用情况报告 , 请仔细阅读</string>
+    <string name="data_collection_weblink" description="Web link for data collection privacy policy" maxwidth="-1">http://www.asus.com.cn/Terms_of_Use_Notice_Privacy_Policy/Privacy_Policy</string>
+    <string name="data_collection_agreement_msg" description="Text for agreement of data collection" maxwidth="-1">我已阅读并同意《协议与条款》</string>
+    <string name="data_collection_policy_title" description="Title for data collection privacy policy" maxwidth="-1">《协议与条款》</string>
+    <string name="data_collection_agreement_tips" description="Tips for agreement of data collection" maxwidth="-1">请选择同意《协议与条款》并继续 ></string>
+   <string name="install_confirm_question">省事儿需要获得以下权限</string>  
+	<string name="adactivity_exit" maxwidth="-1">开始体验</string>
+	
+	<string name="operator_statement_title">运营商声明</string>
+    <string name="operator_statement">《运营商声明》</string>
+    <string name="operator_statement_content">为了给您提供更好的服务，您的设备可能会通过WLAN或数据网络给选定的服务运营商定时发送您以及本设备的相关信息。运营商承诺仅将相关信息以分析方式，用于改进服务质量或提供自定义服务或技术，不会以任何可识别您个人身份的形式向外界披露相关信息。</string>
+    <string name="and_operator_statement">和《运营商声明》</string>
+    <string name="data_collection_agreement_tips_CMCC">请选择同意《协议与条款》和《运营商声明》并继续 ></string>
+    <string name="and">和</string>
+    <string name="asus_intelligence_manager">服务与权限</string>
+    <string name="asus_intelligence_manager_info">华硕智能管家提供骚扰拦截，流量监控，垃圾清理，病毒库更新，需要开启定位，读取位置，储存空间，电话，短信，通讯录，定位，NFC，蓝牙，网络连接权限。系统更新，锁屏壁纸服务需要连接网络权限，可能会产生数据流量费用。系统更新需要读取位置。\n华硕省事儿桌面需要读取您的个人信息。需要读取或写入您手机中的存储空间，日历，电话，短信，通讯录，麦克风，系统设置。需要获取您的联网权限。将使用数据链接和Wlan链接网络，并可能因此产生对应的流量费用。将读取您的位置。某些定位功能将需要读取到您的位置信息。</string>
+    <string name="asus_intelligence_manager_check">开启以上服务与权限</string>
+
+</resources>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:id="@+id/welcome_message_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/welcome_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/welcome_title_margin_top"
+            android:text="@string/welcome_title02"
+            android:textSize="@dimen/welcome_title_size"
+            android:textColor="@color/preference_summary_color" />
+
+        <ImageView
+            android:id="@+id/welcome_title_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/slogan"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/welcome_img_margin_top"/>
+
+        <RelativeLayout
+            android:id="@+id/welcome_content01_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/welcome_content_margin_top">
+            <ImageView
+                android:id="@+id/welcome_content01_icon"
+                android:layout_width="@dimen/welcome_point_icon_size"
+                android:layout_height="@dimen/welcome_point_icon_size"
+                android:src="@drawable/asusres_btn_round"
+                android:layout_marginLeft="@dimen/welcome_content_margin_left_right"
+                android:layout_marginTop="4dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/welcome_content01_tv"
+                android:text="@string/welcome_content01"
+                style="@style/weclome_content2"
+                android:layout_toRightOf="@+id/welcome_content01_icon"
+                android:layout_marginLeft="@dimen/welcome_content_margin_img"
+                android:lineSpacingExtra="@dimen/text_line_spacing"
+                android:layout_marginRight="@dimen/welcome_content_margin_left_right">
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/welcome_content02_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/content_margin_top">
+            <ImageView
+                android:id="@+id/welcome_content02_icon"
+                android:layout_width="@dimen/welcome_point_icon_size"
+                android:layout_height="@dimen/welcome_point_icon_size"
+                android:src="@drawable/asusres_btn_round"
+                android:layout_marginLeft="@dimen/welcome_content_margin_left_right"
+                android:layout_marginTop="4dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/welcome_content02_tv"
+                android:text="@string/welcome_content02"
+                style="@style/weclome_content2"
+                android:layout_toRightOf="@+id/welcome_content02_icon"
+                android:layout_marginLeft="@dimen/welcome_content_margin_img"
+                android:lineSpacingExtra="@dimen/text_line_spacing"
+                android:layout_marginRight="@dimen/welcome_content_margin_left_right">
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/welcome_content03_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/content_margin_top">
+            <ImageView
+                android:id="@+id/welcome_content03_icon"
+                android:layout_width="@dimen/welcome_point_icon_size"
+                android:layout_height="@dimen/welcome_point_icon_size"
+                android:src="@drawable/asusres_btn_round"
+                android:layout_marginLeft="@dimen/welcome_content_margin_left_right"
+                android:layout_marginTop="4dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/welcome_content03_tv"
+                android:text="@string/welcome_content03"
+                style="@style/weclome_content2"
+                android:layout_toRightOf="@+id/welcome_content03_icon"
+                android:layout_marginLeft="@dimen/welcome_content_margin_img"
+                android:lineSpacingExtra="@dimen/text_line_spacing"
+                android:layout_marginRight="@dimen/welcome_content_margin_left_right">
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_exit"
+        android:layout_width="@dimen/add_fingerprint_button_width"
+        android:layout_height="@dimen/add_fingerprint_button_height"
+        android:gravity="center"
+        android:text="@string/adactivity_exit"
+        android:background="@drawable/start_button_enable_bg"
+        android:textSize="@dimen/asus_content_main_size"
+        android:textColor="@color/text_color"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/start"/>
+
+</RelativeLayout>

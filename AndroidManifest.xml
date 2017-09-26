@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.asus.cnsetupwizard"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="9"
+    android:versionName="3.0.0.6.160615" >
+
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="25" />
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.BACKUP" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SET_PREFERRED_APPLICATIONS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.STATUS_BAR" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.SET_TIME_ZONE" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+    <uses-permission android:name="android.permission.SET_TIME" />
+    <uses-permission android:name="com.google.android.providers.settings.permission.WRITE_GSETTINGS" />
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
+    <uses-permission android:name="android.permission.MANAGE_USERS" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.MANAGE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.USER_ACTIVITY" />
+
+    <application
+        android:allowClearUserData="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/asus_setup_wizard_ap_icon"
+        android:theme="@style/SetupWizardTheme"
+        android:anyDensity="true"
+        android:allowBackup="false"
+        android:name="CNSetupWizardApplication"
+        android:label="CNSetupWizard">
+
+        <meta-data
+             android:name="android.max_aspect"
+             android:value="2.1" />
+
+        <activity android:name=".WelcomeActivity"
+            android:configChanges="keyboardHidden|keyboard|locale|layoutDirection"
+            android:excludeFromRecents="true"
+            android:immersive="true"
+            android:label="@string/setup_wizard_title"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/Transparent">
+            <intent-filter android:priority="6">
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.asus.cnsetupwizard.WELCOME"/>
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+                <action android:name="android.intent.action.DEVICE_INITIALIZATION_WIZARD" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".wifi.WifiSettingsActivity"
+            android:configChanges="keyboardHidden|keyboard"
+            android:excludeFromRecents="true"
+            android:immersive="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/Transparent">
+            <intent-filter >
+                <action android:name="com.asus.cnsetupwizard.WIFISETTING"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".InspireAsusActivity"
+            android:configChanges="keyboardHidden|keyboard"
+            android:hardwareAccelerated="false"
+            android:excludeFromRecents="true"
+            android:immersive="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter >
+                <action android:name="com.asus.cnsetupwizard.INSPIRE_ASUS"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".TermAndConditionActivity"
+            android:configChanges="keyboardHidden|keyboard"
+            android:hardwareAccelerated="false"
+            android:excludeFromRecents="true"
+            android:immersive="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/Transparent">
+            <intent-filter >
+                <action android:name="com.asus.cnsetupwizard.TermAndCondition"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SetupWizardExitActivity"
+            android:configChanges="keyboardHidden|keyboard"
+            android:excludeFromRecents="true"
+            android:immersive="true"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter >
+                <action android:name="com.asus.cnsetupwizard.EXIT"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".OperatorStatement"
+            android:configChanges="keyboardHidden|keyboard"
+            android:hardwareAccelerated="false"
+            android:excludeFromRecents="true"
+            android:immersive="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter >
+                <action android:name="com.asus.cnsetupwizard.OPERATOR_STATEMENT"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".SimcardPromptActivity"
+            android:configChanges="keyboardHidden|keyboard"
+            android:hardwareAccelerated="false"
+            android:excludeFromRecents="true"
+            android:immersive="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/Transparent">
+
+            <intent-filter >
+                <action android:name="com.asus.cnsetupwizard.SIMCARD_PROMPT"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".wifi.WifiConnectActivity"
+            android:configChanges="keyboardHidden|keyboard"
+            android:hardwareAccelerated="false"
+            android:excludeFromRecents="true"
+            android:immersive="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="adjustPan">
+
+            <intent-filter >
+                <action android:name="com.asus.cnsetupwizard.WIFICONNECT"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".fingerprint.FingerprintActivity"
+            android:configChanges="keyboardHidden|keyboard"
+            android:hardwareAccelerated="false"
+            android:excludeFromRecents="true"
+            android:immersive="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="adjustPan">
+
+            <intent-filter >
+                <action android:name="com.asus.cnsetupwizard.FINGERPRINT"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".fingerprint.SelectScreenLockActivity"
+            android:configChanges="keyboardHidden|keyboard"
+            android:hardwareAccelerated="false"
+            android:excludeFromRecents="true"
+            android:immersive="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="adjustPan">
+
+            <intent-filter >
+                <action android:name="com.asus.cnsetupwizard.SELECTSCREENLOCK"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    <activity android:name=".fingerprint.ChooseLockPattern"
+        android:configChanges="keyboardHidden|keyboard"
+        android:hardwareAccelerated="false"
+        android:excludeFromRecents="true"
+        android:immersive="false"
+        android:launchMode="singleTask"
+        android:screenOrientation="nosensor"
+        android:windowSoftInputMode="adjustPan"
+        android:theme="@style/lockPatternview">
+
+        <intent-filter >
+            <action android:name="com.asus.cnsetupwizard.CHOOSELOCKPATTERN"/>
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+
+    <activity android:name=".fingerprint.ChooseLockPassword"
+        android:configChanges="keyboardHidden|keyboard"
+        android:hardwareAccelerated="false"
+        android:excludeFromRecents="true"
+        android:immersive="false"
+        android:launchMode="singleTask"
+        android:screenOrientation="nosensor"
+        android:windowSoftInputMode="adjustPan"
+        android:theme="@style/lockPatternview">
+
+        <intent-filter >
+            <action android:name="com.asus.cnsetupwizard.CHOOSELOCKPASSWORD"/>
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+
+    <activity android:name=".fingerprint.FingerprintEnrollFindSensor"
+        android:configChanges="keyboardHidden|keyboard"
+        android:hardwareAccelerated="false"
+        android:excludeFromRecents="true"
+        android:immersive="false"
+        android:launchMode="singleTask"
+        android:screenOrientation="nosensor"
+        android:windowSoftInputMode="adjustPan"
+        android:theme="@style/lockPatternview"
+        android:permission="android.permission.MANAGE_FINGERPRINT">
+
+        <intent-filter >
+            <action android:name="com.asus.cnsetupwizard.FINGERPRINTFIND"/>
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+
+    <activity android:name=".fingerprint.FingerprintEnrollEnrolling"
+        android:configChanges="keyboardHidden|keyboard"
+        android:hardwareAccelerated="false"
+        android:excludeFromRecents="true"
+        android:immersive="false"
+        android:launchMode="singleTask"
+        android:screenOrientation="nosensor"
+        android:windowSoftInputMode="adjustPan"
+        android:theme="@style/lockPatternview"
+        android:permission="android.permission.MANAGE_FINGERPRINT">
+
+        <intent-filter >
+            <action android:name="com.asus.cnsetupwizard.FINGERPRINTENROLL"/>
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+
+    <activity android:name=".fingerprint.FingerprintEnrollFinish"
+        android:configChanges="keyboardHidden|keyboard"
+        android:hardwareAccelerated="false"
+        android:excludeFromRecents="true"
+        android:immersive="false"
+        android:launchMode="singleTask"
+        android:screenOrientation="nosensor"
+        android:windowSoftInputMode="adjustPan">
+
+        <intent-filter >
+            <action android:name="com.asus.cnsetupwizard.FINGETPRINTFINISH"/>
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+
+    <activity android:name=".fingerprint.ConfirmLockPassword"
+        android:configChanges="keyboardHidden|keyboard"
+        android:hardwareAccelerated="false"
+        android:excludeFromRecents="true"
+        android:immersive="false"
+        android:launchMode="singleTask"
+        android:screenOrientation="nosensor"
+        android:windowSoftInputMode="adjustPan">
+
+        <intent-filter >
+            <action android:name="com.asus.cnsetupwizard.CONFIRMLOCKPASSWORD"/>
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+
+    <activity android:name=".fingerprint.ConfirmLockPassword$InternalActivity"
+        android:configChanges="keyboardHidden|keyboard"
+        android:hardwareAccelerated="false"
+        android:excludeFromRecents="true"
+        android:immersive="false"
+        android:launchMode="singleTask"
+        android:screenOrientation="nosensor"
+        android:windowSoftInputMode="adjustPan">
+
+        <intent-filter >
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+
+    <activity android:name=".fingerprint.ConfirmLockPattern"
+        android:configChanges="keyboardHidden|keyboard"
+        android:hardwareAccelerated="false"
+        android:excludeFromRecents="true"
+        android:immersive="false"
+        android:launchMode="singleTask"
+        android:screenOrientation="nosensor"
+        android:windowSoftInputMode="adjustPan"
+        android:theme="@style/lockPatternview">
+
+        <intent-filter >
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+
+    <activity android:name=".fingerprint.ConfirmLockPattern$InternalActivity"
+        android:configChanges="keyboardHidden|keyboard"
+        android:hardwareAccelerated="false"
+        android:excludeFromRecents="true"
+        android:immersive="false"
+        android:launchMode="singleTask"
+        android:screenOrientation="nosensor"
+        android:windowSoftInputMode="adjustPan"
+        android:theme="@style/lockPatternview">
+
+        <intent-filter >
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+
+    <activity android:name=".SetupWizardCompleteActivity"
+        android:configChanges="keyboardHidden|keyboard"
+        android:hardwareAccelerated="false"
+        android:excludeFromRecents="true"
+        android:immersive="true"
+        android:launchMode="singleTask"
+        android:screenOrientation="nosensor"
+        android:windowSoftInputMode="adjustPan"
+        android:theme="@style/Transparent">
+        <intent-filter >
+            <action android:name="com.asus.cnsetupwizard.setupwizardcomplete"/>
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+
+
+
+</application>
+
+</manifest>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Title for wifi setting of Preference Category -->
+    <string name="wifi_setting_preference_category_title">"Select available Wi-Fi network"</string>
+    
+    <!-- Warning message about security implications of enabling an input method, displayed as a dialog
+         message when the user selects to enable an IME. -->
+    <string name="ime_security_warning">This input method may be able to collect
+    all the text you type, including personal data like passwords and credit
+    card numbers.  It comes from the app
+    <xliff:g id="ime_application_name">%1$s</xliff:g>.
+    Use this input method?</string>
+    <!-- Title for settings of active input methods in each IME [CHAR LIMIT=35] -->
+    <string name="active_input_method_subtypes">Active input methods</string>
+    <!-- Title for settings whether or not the framework will select input methods in an IME based on the current system locale. [CHAR LIMIT=35] -->
+    <string name="use_system_language_to_select_input_method_subtypes">Use system language</string>
+
+    <!-- Button label to add an account [CHAR LIMIT=20] -->
+    <string name="add_account_label">Add account</string>
+
+    <!-- Content description of the enabled sync icon for accessibility. [CHAR LIMIT=NONE] -->
+    <string name="accessibility_sync_enabled">Sync enabled</string>
+    <!-- Content description of the disabled sync icon for accessibility. [CHAR LIMIT=NONE] -->
+    <string name="accessibility_sync_disabled">Sync disabled</string>
+    <!-- Content description of the disabled sync icon for accessibility. [CHAR LIMIT=NONE] -->
+    <string name="accessibility_sync_error">Sync error.</string>
+    <!-- Image description for the sync failed icon. -->
+    <string name="sync_failed">Sync failed</string>
+    <!-- Animation description for the sync active icon. -->
+    <string name="sync_active">Sync active</string>
+
+    <!-- Sync status messages on Accounts & Synchronization settings --><skip />
+    <!-- Sync status shown when sync is enabled [CHAR LIMIT=25] -->
+    <string name="sync_enabled">Sync is ON</string>
+    <!-- Sync status shown when sync is disabled [CHAR LIMIT=25] -->
+    <string name="sync_disabled">Sync is OFF</string>
+    <!-- Sync status shown when last sync resulted in an error [CHAR LIMIT=25] -->
+    <string name="sync_error">Sync error</string>
+    <!-- Last synced date/time for accounts that synced [CHAR LIMIT=none] -->
+    <string name="last_synced">Last synced <xliff:g id="last_sync_time">%1$s</xliff:g></string>
+    <!-- Sync status shown when sync is disabled [CHAR LIMIT=30] -->
+    <string name="sync_in_progress">Syncing now\u2026</string>
+
+    <!-- Data synchronization settings screen, summary of a sync provider (for example, Gmail) when autosync is off and the user wants to do a one-time sync. -->
+    <string name="sync_one_time_sync">Touch to sync now<xliff:g id="last_sync_time">\n%1$s</xliff:g></string>
+    <!-- Formatter in AccountSyncSettings for each application we wish to synchronize, e.g. "Sync Calendar" -->
+    <string name="sync_item_title"><xliff:g id="authority" example="Calendar">%s</xliff:g></string>
+
+    <!-- Date & time setting screen setting check box title if the time zone should be determined automatically [CHAR LIMIT=25] -->
+    <string name="zone_auto">Automatic time zone</string>
+
+    <!-- Date & time setting screen setting check box title if the date and time should be determined automatically [CHAR LIMIT=25] -->
+    <string name="date_time_auto">Automatic date &amp; time</string>
+    <!-- Date & time setting screen setting option summary text when Automatic check box is selected
+        (that is, when date and time should be determined automatically) [CHAR LIMIT=100] -->
+    <string name="date_time_auto_summaryOn">Use network-provided time</string>
+    <!-- Date & time setting screen setting option summary text when Automatic check box is clear
+        [CHAR LIMIT=100] -->
+    <string name="date_time_auto_summaryOff">Use network-provided time</string>
+    <!-- Date & time setting screen setting option title -->
+    <string name="date_time_set_time">Set time</string>
+    <!-- Date & time setting screen setting option title -->
+    <string name="date_time_set_timezone">Select time zone</string>
+    <!-- Date & time setting screen setting option title -->
+    <string name="date_time_set_date">Set date</string>
+    <!-- Title string shown above DatePicker, letting a user select system date
+         [CHAR LIMIT=20] -->
+    <string name="date_picker_title">Date</string>
+    <!-- Title string shown above TimePicker, letting a user select system time
+         [CHAR LIMIT=20] -->
+    <string name="time_picker_title">Time</string>
+
+    <!-- HTTP proxy settings title -->
+    <string name="proxy_settings_title">Proxy settings</string>
+    <!-- HTTP proxy settings. Button to clear the proxy box. -->
+    <string name="proxy_clear_text">Clear</string>
+    <!-- HTTP proxy settings. The port number label. -->
+    <string name="proxy_port_label">Proxy port</string>
+    <!-- HTTP proxy settings. The hint text field for port. -->
+    <string name="proxy_port_hint">Port:8080</string>
+    <!-- HTTP proxy settings. The exclusion list label. -->
+    <string name="proxy_exclusionlist_label">Bypass proxy for</string>
+    <!-- HTTP proxy settings. The hint text for proxy exclusion list. [CHAR LIMIT=50]-->
+    <string name="proxy_exclusionlist_hint">Exclusion list: example.com,web</string>
+    <!-- HTTP proxy settings. The button to restore the defaults. -->
+    <string name="proxy_defaultView_text">Restore defaults</string>
+    <!-- HTTP proxy settings. The button to save. -->
+    <string name="proxy_action_text">Done</string>
+    <!-- HTTP proxy settings. The text field for the hostname -->
+    <string name="proxy_hostname_label">Proxy hostname</string>
+    <!-- HTTP proxy settings. The hint text field for the hostname. [CHAR LIMIT=50] -->
+    <string name="proxy_hostname_hint">proxy.example.com</string>
+    <!-- HTTP proxy settings. Title if there is an error-->
+    <string name="proxy_error">Attention</string>
+    <!-- HTTP proxy settings. Button to get rid of error box-->
+    <string name="proxy_error_dismiss">OK</string>
+    <!-- HTTP proxy settings. The error if the hostname is not valid -->
+    <string name="proxy_error_invalid_host">"The hostname you typed isn\'t valid."</string>
+    <!-- HTTP proxy settings. The error if the exclusion list is not valid -->
+    <string name="proxy_error_invalid_exclusion_list">"The exclusion list you typed isn\'t properly formatted. Type a comma-separated list of excluded domains."</string>
+    <!-- HTTP proxy settings. Error msg -->
+    <string name="proxy_error_empty_port">You need to complete the port field.</string>
+    <!-- HTTP proxy settings. Error msg -->
+    <string name="proxy_error_empty_host_set_port">The port field must be empty if the host field is empty.</string>
+    <!-- HTTP proxy settings. Error msg -->
+    <string name="proxy_error_invalid_port">"The port you typed isn\'t valid."</string>
+    <!-- HTTP proxy settings. Warning message about limited application support [CHAR LIMIT=100]-->
+    <string name="proxy_warning_limited_support">The HTTP proxy is used by the browser but may not be used by the other apps.</string>
+
+    <!-- Wi-Fi Settings --> <skip />
+    <!-- Title of WifiSettingFragment Preference Category  -->
+    <string name="wifi_settings_preference_category_title">"Select available Wi-Fi network"</string>
+    <!-- Title of the Wi-fi settings screen -->
+    <string name="wifi_settings_category">Wi-Fi settings</string>
+    <!-- Summary text when turning Wi-Fi or bluetooth on -->
+    <string name="wifi_starting">Turning Wi-Fi on\u2026</string>
+    <!-- Summary text when turning Wi-Fi or bluetooth off -->
+    <string name="wifi_stopping">Turning off Wi-Fi\u2026</string>
+    <!-- Summary text when Wi-Fi or bluetooth has error -->
+    <string name="wifi_error">Error</string>
+    <!-- Toast message when Wi-Fi or bluetooth is disallowed in airplane mode -->
+    <string name="wifi_in_airplane_mode">In Airplane mode</string>
+    <!-- Toast message when Wi-Fi cannot scan for networks -->
+    <string name="wifi_fail_to_scan">"Can\'t scan for networks"</string>
+    <string name="wifi_scan_notify_text_location_on">To improve location accuracy and for other purposes, Google and other apps may scan for nearby networks, even when Wi-Fi is off. If you don\'t want this to happen, go to Advanced &gt; Scanning always available.</string>
+    <string name="wifi_scan_notify_text_location_off">Apps may scan for nearby networks, even when Wi-Fi is off. If you don\'t want this to happen, go to Advanced &gt; Scanning always available.</string>
+    <!-- Action bar text message to manually add a wifi network [CHAR LIMIT=20]-->
+    <!-- Menu option to connect to a Wi-Fi network -->
+    <string name="wifi_menu_connect">Connect to network</string>
+    <!-- Menu option to delete a Wi-Fi network -->
+    <string name="wifi_menu_forget">Forget network</string>
+    <!-- Menu option to modify a Wi-Fi network configuration -->
+    <string name="wifi_menu_modify">Modify network</string>
+    <!-- Wi-Fi settings. text displayed when Wi-Fi is off and network list is empty [CHAR LIMIT=50]-->
+    <string name="wifi_empty_list_wifi_off">To see available networks, turn Wi-Fi on.</string>
+    <!-- Wi-Fi settings. text displayed when Wi-Fi is on and network list is empty [CHAR LIMIT=50]-->
+    <string name="wifi_empty_list_wifi_on">Searching for Wi-Fi networks\u2026</string>
+    <!-- Wifi Settings. text displayed when user has restriction DISALLOW_CONFIG_WIFI [CHAR LIMIT=NONE]-->
+    <string name="wifi_empty_list_user_restricted">"You don\'t have permission to change the Wi-Fi network."</string>
+
+    <!-- Dialog for Access Points --> <skip />
+    <!-- Label to show/hide advanced options -->
+    <string name="wifi_show_advanced">Show advanced options</string>
+    <!-- Label for the SSID of the network -->
+    <string name="wifi_ssid">Network SSID</string>
+    <!-- Hint for a text field to enter the SSID of a hidden wifi network. [CHAR LIMIT=35] -->
+    <string name="wifi_ssid_hint">Enter the SSID</string>
+    <!-- Label for the security of the connection -->
+    <string name="wifi_security">Security</string>
+    <!-- Label for the signal strength of the connection -->
+    <string name="wifi_signal">Signal strength</string>
+    <!-- Label for the status of the connection -->
+    <string name="wifi_status">Status</string>
+    <!-- Label for the link speed of the connection -->
+    <string name="wifi_speed">Link speed</string>
+    <!-- Label for the IP address of the connection -->
+    <string name="wifi_ip_address">IP address</string>
+    <!-- Hint text for the IP address -->
+    <string name="wifi_ip_address_hint">IP address: 192.168.1.128</string>
+    <!-- Label for the EAP method of the network -->
+    <string name="wifi_eap_method">EAP method</string>
+    <!-- Label for the phase2 -->
+    <string name="please_select_phase2">Phase 2 authentication</string>
+    <!-- Label for the EAP CA certificate of the network -->
+    <string name="wifi_eap_ca_cert">CA certificate</string>
+    <!-- Label for the EAP user certificate of the network -->
+    <string name="wifi_eap_user_cert">User certificate</string>
+    <!-- Label for the EAP identity of the network -->
+    <string name="wifi_eap_identity">Identity</string>
+    <!-- Label for the EAP anonymous identity of the network -->
+    <string name="wifi_eap_anonymous">Anonymous identity</string>
+    <!-- Label for the password of the secured network -->
+    <string name="wifi_password">Password</string>
+    <!-- Label for the check box to show password -->
+    <string name="wifi_show_password">Show password</string>
+    <!-- Label for the spinner to show ip settings [CHAR LIMIT=25] -->
+    <string name="wifi_ip_settings">IP settings</string>
+    <!-- Hint for unchanged fields -->
+    <string name="wifi_unchanged">(unchanged)</string>
+    <!-- Hint for unspecified fields -->
+    <string name="wifi_unspecified">(unspecified)</string>
+    <!-- Summary for the remembered network. -->
+    <string name="wifi_remembered">Saved</string>
+    <!-- Status for networks disabled for unknown reason -->
+    <string name="wifi_disabled_generic">Disabled</string>
+    <!-- Status for networked disabled from a DNS or DHCP failure -->
+    <string name="wifi_disabled_network_failure">Avoided poor Internet connection</string>
+    <!-- Status for networks disabled from authentication failure (wrong password
+         or certificate). -->
+    <string name="wifi_disabled_password_failure">Authentication problem</string>
+    <!-- Summary for the remembered network but currently not in range. -->
+    <string name="wifi_not_in_range">Not in range</string>
+    <!-- Substring of status line when Wi-Fi Protected Setup (WPS) is available and
+         string is listed first [CHAR LIMIT=20]-->
+    <string name="wifi_wps_available_first_item">WPS available</string>
+    <!-- Substring of wifi status when Wi-Fi Protected Setup (WPS) is available and
+         string is listed after a wifi_secured_* string-->
+    <string name="wifi_wps_available_second_item">\u0020(WPS available)</string>
+    <!-- Substring of wifi status for wifi with authentication.  This version is for when the
+         string is first in the list (titlecase in english) -->
+    <string name="wifi_secured_first_item">Secured with <xliff:g id="wifi_security_short">%1$s</xliff:g></string>
+    <!-- Substring of wifi status for wifi with authentication.  This version is for when the
+         string is not first in the list (lowercase in english) -->
+    <string name="wifi_secured_second_item">, secured with <xliff:g id="wifi_security_short">%1$s</xliff:g></string>
+
+    <!-- Do not translate.  Concise terminology for wifi with WEP security -->
+    <string name="wifi_security_short_wep">WEP</string>
+    <!-- Do not translate.  Concise terminology for wifi with WPA security -->
+    <string name="wifi_security_short_wpa">WPA</string>
+    <!-- Do not translate.  Concise terminology for wifi with WPA2 security -->
+    <string name="wifi_security_short_wpa2">WPA2</string>
+    <!-- Do not translate.  Concise terminology for wifi with both WPA/WPA2 security -->
+    <string name="wifi_security_short_wpa_wpa2">WPA/WPA2</string>
+    <!-- Do not translate.  Concise terminology for wifi with unknown PSK type -->
+    <string name="wifi_security_short_psk_generic">@string/wifi_security_short_wpa_wpa2</string>
+    <!-- Do not translate.  Concise terminology for wifi with 802.1x EAP security -->
+    <string name="wifi_security_short_eap">802.1x</string>
+
+    <!-- Used in Wi-Fi settings dialogs when Wi-Fi does not have any security. -->
+    <string name="wifi_security_none">None</string>
+
+    <!-- Do not translate.  Terminology for wifi with WEP security -->
+    <string name="wifi_security_wep">WEP</string>
+    <!-- Do not translate.  Terminology for wifi with WPA security -->
+    <string name="wifi_security_wpa">WPA PSK</string>
+    <!-- Do not translate.  Terminology for wifi with WPA2 security -->
+    <string name="wifi_security_wpa2">WPA2 PSK</string>
+    <!-- Do not translate.  Terminology for wifi with both WPA/WPA2 security, or unknown -->
+    <string name="wifi_security_wpa_wpa2">WPA/WPA2 PSK</string>
+    <!-- Do not translate.  Terminology for wifi with unknown PSK type -->
+    <string name="wifi_security_psk_generic">@string/wifi_security_wpa_wpa2</string>
+    <!-- Do not translate.  Concise terminology for wifi with 802.1x EAP security -->
+    <string name="wifi_security_eap">802.1x EAP</string>
+
+    <!-- Button label to connect to a Wi-Fi network -->
+    <string name="wifi_connect">Connect</string>
+    <!-- Failured notification for connect -->
+    <string name="wifi_failed_connect_message">Failed to connect to network</string>
+    <!-- Button label to delete a Wi-Fi network -->
+    <string name="wifi_forget">Forget</string>
+    <!-- Failured notification for forget -->
+    <string name="wifi_failed_forget_message">Failed to forget network</string>
+    <!-- Button label to save a Wi-Fi network configuration -->
+    <string name="wifi_save">Save</string>
+    <!-- Failured notification for save -->
+    <string name="wifi_failed_save_message">Failed to save network</string>
+    <!-- Button label to dismiss the dialog -->
+    <string name="wifi_cancel">Cancel</string>
+
+    <!-- Wi-Fi Advanced Settings --> <skip />
+    <!-- Error message if the IP address is not valid [CHAR LIMIT=50]-->
+    <string name="wifi_ip_settings_invalid_ip_address">Type a valid IP address.</string>
+    <!-- Error message if the gateway is not valid [CHAR LIMIT=50]-->
+    <string name="wifi_ip_settings_invalid_gateway">Type a valid gateway address.</string>
+    <!-- Error message if the dns is not valid [CHAR LIMIT=50]-->
+    <string name="wifi_ip_settings_invalid_dns">Type a valid DNS address.</string>
+    <!-- Error message if the network prefix length is not valid [CHAR LIMIT=50]-->
+    <string name="wifi_ip_settings_invalid_network_prefix_length">Type a network prefix length between 0 and 32.</string>
+    <!-- Label for the DNS (first one) -->
+    <string name="wifi_dns1">DNS 1</string>
+    <!-- Hint text for DNS -->
+    <string name="wifi_dns1_hint">DNS1: 8.8.8.8</string>
+    <!-- Label for the DNS (second one)-->
+    <string name="wifi_dns2">DNS 2</string>
+    <!-- Hint text for DNS -->
+    <string name="wifi_dns2_hint">DNS2: 8.8.8.8</string>
+    <!-- Label for the gateway of the network -->
+    <string name="wifi_gateway">Gateway</string>
+    <!-- Hint text for the gateway -->
+    <string name="wifi_gateway_hint">Gateway: 192.168.1.1</string>
+    <!-- Label for the network prefix of the network [CHAR LIMIT=25]-->
+    <string name="wifi_network_prefix_length">Network prefix length</string>
+    <!-- Hint text for network prefix length -->
+    <string name="wifi_network_prefix_length_hint">Prefix length: 24</string>
+
+    <!-- Security Picker --><skip />
+    <!--  Title for security picker to choose the unlock method: None/Pattern/PIN/Password [CHAR LIMIT=22] -->
+    <string name="lock_settings_picker_title">Choose screen lock</string>
+
+    <!-- Help URL, WiFi [DO NOT TRANSLATE] -->
+    <string name="help_url_wifi" translatable="false"></string>
+    <!-- Help URL, Accounts [DO NOT TRANSLATE] -->
+    <string name="help_url_accounts" translatable="false"></string>
+
+    <!-- wizard_script_uri -->
+    <string name="wizard_script_uri">android.resource://com.asus.cnsetupwizard/raw/custom_wizard_script</string>
+    <string name="wizard_script_uri_no_network">android.resource://com.asus.cnsetupwizard/raw/custom_wizard_script_no_network</string>
+	
+    <!-- PIN entry dialog title for entering the administrator PIN [CHAR LIMIT=none] -->
+    <string name="restr_pin_enter_admin_pin">Enter administrator PIN</string>
+</resources>

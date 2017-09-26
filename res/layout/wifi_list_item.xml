@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/asus_content_height2"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/asus_content_margin_left_right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/asus_content_main_color"
+                android:textSize="@dimen/asus_content_main_size"
+                android:id="@id/name"
+                android:layout_marginTop="@dimen/asus_content_margin_top"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/asus_content_summary_color"
+                android:textSize="@dimen/asus_content_summary_size"
+                android:id="@+id/summary"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wifi_icon"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/icon"
+            android:layout_marginRight="@dimen/ims_item_text_margin_left"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/asusres_right_arrow"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/asus_content_margin_left_right"
+            android:id="@+id/icon"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/asus_divider_line"
+            android:background="@color/asus_divider_area_color"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/asus_content_margin_left_right"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/asus_content_height1"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/asus_popup_content_margin_left_right"
+        android:id="@+id/name"
+        android:textSize="@dimen/asus_content_main_size"
+        android:textColor="@color/preference_category_text_color"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/asus_popup_content_margin_left_right"
+        android:layout_alignParentRight="true"
+        android:id="@+id/choice"
+        android:focusable="false"
+        android:clickable="false"
+        style="@style/CustomRadioTheme"/>
+
+</RelativeLayout>
